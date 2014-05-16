@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Transbarca App</title>
+		
+		<!-- jQuery / jQueryMobile Scripts -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<script>
+	var response = $.getJSON("https://maps.googleapis.com/maps/api/place/nearbysearch/json?&key=AIzaSyBmrePMWx77RjGbqUyY-BmeUk0d7084hoo&sensor=false&location=10.08483,-69.340658&rankby=distance&keyword=transbarca%20parada&callback=?",
+  function(data){
+	paradas=JSON.parse(data)
+	alert(paradas);
+    });
+//console.log(response.responseText);
+</script>
+</body>
+</html>

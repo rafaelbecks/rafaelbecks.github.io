@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<!--
+	Cthulhu Downloader 1.0
+	Autor: Rafael Becerra
+	Fecha: 16/04/2014
+	Template: Twenty 1.0 by HTML5 UP
+-->
+<html>
+	<head>
+		<title>Cthulhu Downloader Online</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="analizarJSON.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+<?php 
+session_start();
+include("cthulhu_back.php");
+if($_SESSION['nombre']!=null){
+global $enlace;
+$email=$_SESSION['correo'];
+$name=$_SESSION['nombre'];
+$size = 110;
+$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+}
+?>	
+	<body class="index loading">
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1 id="logo"><a href="index.php">Cthulhu Downloader <span>Online</span></a></h1>
+
+<nav id="nav">
+<?php 
+if(isset($_SESSION['correo']))
+echo'<img id="gravatarIMG" src="'.$grav_url.'" />'; ?>			
+					<ul>
+<?php 
+				if(isset($_SESSION['correo'])){
+				echo '<li><h1 id="logo"><a class="nombre" href="index.php">&nbsp;&nbsp;&nbsp;'.$name.'</a><span class="fa fa-clock-o" onclick="mostrareldiv(\'historialwindow\'); mostrarHistorial(\''.$email.'\');"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="cthulhu_back.php?opt=logout"><span class="fa fa-power-off" ></span></a></h1></li>&nbsp;&nbsp;&nbsp;
+</ul>				</nav>';
+//<span class="fa fa-cogs" onclick="mostrareldiv(\'cog\')">
+}
+				else{
+					echo '<li class="current"><a onclick="mostrareldiv(\'reg\');">Regístrate</a></li>
+						<li><a href="#" class="button special" onclick="mostrareldiv(\'login\');">Entrar</a></li>
+					';					
+				};
+?>					
+
+			</header>
+		<!-- Banner -->	
+<script>
+
+</script>
+			<section class="banner">
+
+				<!--
+					".inner" is set up as an inline-block so it automatically expands
+					in both directions to fit whatever's inside it. This means it won't
+					automatically wrap lines, so be sure to use line breaks where
+					appropriate (<br />).
+				-->
+				<div class="inner">			
+					<header>
+				<h1 id="logo">Cthulhu Downloader <strong>Online</strong></br></h1>
+					</header>
+					<p onclick="cambiarFondo();">Introduce tu URL</p></br>
+					<input id="urlMedia" type="text" name="urlMedia" placeholder="URL/Búsqueda" required />
+					<footer>
+						<ul class="buttons vertical">
+<?php
+echo '	<li><a href="#main" class="button fit" onclick="requestMedia(\''.$email.'\');">Descargar/Buscar</a></li>';
+?>
+						</ul>
+					</footer>	
+	</div><section id="footer">
+	<span class="copyright">Desarrollo: <a href="http://rafaelbecks.github.io" target="_blank">Rafael Becerra. </a>Diseño : <a href="http://html5up.net" target="_blank">HTML5UP </a>| </span> <span class="copyright" onclick="mostrareldiv('ayuda');"><a>Acerca de</a></span> 
+		</section>	</section>
+
+	<div id="download" class="modal">
+<section id="cta" class="contenido-interno">
+			
+				<header>
+					<h2 id="tituloVideo" onclick="mostrareldiv('preview');">Título del video</h2>
+					<section style="float:left;">					
+					<img id="thumbnailVideo" width="200px">
+		</br></br><p><a href="#" style="float:center; font-size:10px;"class="button special" onclick="mostrareldiv('descripcionWindow');">Mostrar descripcion</a></p>
+		</section>
+<span>Selecciona tu descarga</span>
+
+					<ul id="formatosVideo">
+					
+					</ul>
+
+				</header>
+
+				<footer>
+					<ul class="buttons">
+		<!-- 	<li><a id="downloadMedia" href="index.php" class="button special" onclick="">Descargar</a></li> -->
+						<li><a href="#" class="button" onclick="ocultareldiv('download');">Cerrar</a></li>
+
+					</ul>
+				</footer>
+			
+			</section>
+</div>
+
+
+<div id="login" class="modal">
+<section id="cta" class="contenido-interno-login">
+					<h2>Inicia Sesión</h2>
+					<form class="inner" action="cthulhu_back.php?opt=log" method="POST">	
+					<input type="text" name="correo" placeholder="Correo" required /></br>
+					<input type="password" name="password" placeholder="Password" required /></br>
+				<span><a href="#">¿Olvidaste tu contraseña?<a></span></br></br>
+		<footer>		
+		<ul class="buttons">		
+		<li><input type="submit" class="button special" value="Entrar"/></li>
+		<li><a class="button fit"onclick="ocultareldiv('login');">Cerrar<a/></li>
+		</ul>	
+		</footer>	</form>
+			</section>
+</div>
+<div id="reg" class="modal">
+<section id="cta" class="contenido-interno-login">
+					<h2>Regístrate</h2>
+					<form id="registro" class="inner" action="cthulhu_back.php?opt=reg" method="POST">
+					<input type="text" name="nombre" placeholder="Nombre" required /></br>	
+					<input type="text" name="correo" placeholder="Correo" required /></br>
+				<input type="password" name="password1" id="password1" placeholder="Password" required /></br>
+				<input type="password" name="password2" id="password2" placeholder="Confirme Password" required /></br>
+	<footer>
+	<ul class="buttons">
+		<li><a class="button special" style="width:20px;" onclick="validarPass();">Guardar</a></li>
+		<li><a class="button fit" onclick="ocultareldiv('reg');">Cerrar</a></li>
+	</ul>	
+	</footer>		
+	</form>
+	<script>function validarPass(){
+	if (document.getElementById("password1").value != document.getElementById("password2").value){	
+	alert('Contraseñas no coinciden');	}
+	else{
+	document.forms["registro"].submit();}
+	}</script>
+			</section>
+</div>
+
+<div id="ayuda" class="modal">
+<section id="cta" class="contenido-interno-ayuda">
+					<h2>Acerca de</h2>
+<p>Cthulhu Downloader Online es una implementación de youtube-dl en un servidor web. Es posible gracias a <a href="http://rg3.github.io/youtube-dl/" target="_blank">youtube-dl</a> y
+<a href="https://github.com/jaimeMF/youtube-dl-api-server/" target="_blank">youtube-dl-api-server</a>. Estos son alguno de los sitios soportados por la aplicación. (Sitios probados, para ver la lisa completa, haz clic aquí)</br><center>
+<ul id="list-icons">
+<li><img src="images/icons/youtube.gif" width="100" alt="Youtube"></li>
+<li><img src="images/icons/vimeo.png" width="100" alt="Vimeo"></li>
+<li><img src="images/icons/soundcloud-icon.png" width="100" alt="SoundCloud"></li>
+<li><img src="images/icons/facebook.png" width="100" alt="Facebook"></li>
+<li><img src="images/icons/bandcamp.jpg" width="103" alt="Bandcamp"></li>
+</center>
+<p><strong>Las "búsquedas" directas sólo funcionan con youtube, y aún están en período de prueba</strong></br>Cualquier contribución o notificacion de bugs puedes escribir a <a href="mailto:rafaelbecks93@gmail.com">rafaelbecks93@gmail.com</a>. Puedes clonar el repositorio <a href="">aquí</a></p>
+ 
+		<a  class="button special" onclick="ocultareldiv('ayuda');">Aceptar</a>		
+			</section>
+</div>
+
+<div id="historialwindow" class="modal">
+<section id="cta" class="contenido-interno-hist">
+			<div id="hist">
+				<h3>Historial de descargas</h3> 
+				<ol id="historialshow">				
+</ol>
+			</div>
+		<a  class="button special" onclick="ocultareldiv('historialwindow');">Cerrar</a>
+</section>
+</div>
+
+<div id="cog" class="modal">
+<section id="cta" class="contenido-interno-cog">
+			<div id="hist">
+				<h3>Configuración</h3> 
+				<span>Selecciona el fondo para tu sitio</span>
+				<ul id="list-icons">
+		<li><a href="cthulhu_back?opt=chb&f=1"><img src="images/1.jpg" width="150"/></a></li>				
+		<li><a href="cthulhu_back?opt=chb&f=2"><img src="images/2.jpg" width="150"/></a></li>				
+		<li><a href="cthulhu_back?opt=chb&f=3"><img src="images/3.jpg" width="150"/></a></li>				
+		<li><a href="cthulhu_back?opt=chb&f=4"><img src="images/4.jpg" width="150"/></a></li>				
+				</ul>
+			<span>O sube una imagen (.jpg/.png)</span>
+			<input type="file"/>
+			</div>
+		</br><a  class="button special" onclick="ocultareldiv('cog');">Aceptar</a>
+</section>
+</div>
+
+<div id="descripcionWindow" class="modal">
+<section id="cta" class="contenido-interno-des">
+				<h3>Descripcion</h3>
+				<p id="descripcionVideo"></p>
+		<a  class="button" onclick="ocultareldiv('descripcionWindow');">Cerrar</a></center>
+</section>
+</div>
+
+<div id="loading" class="modal">
+<div class="contenido-interno-loading">
+</br></br></br></br></br></br></br>
+<div class="circle"></div>
+<center><span>Cargando información de tu descarga..</span></br></br>
+		<a  class="button" onclick="ocultareldiv('loading');">Cancelar</a></center></center>
+</div>
+</div>
+<div id="error" class="modal">
+<div class="contenido-interno-loading">
+</br></br></br></br></br></br></br>
+<div class="errorcircle"></div>
+<center><span id="mensajeError">Ha ocurrido un error en tu descarga. Posiblemente el link no sea público, o el sitio no esté soportado.</br></br></span>
+		<a  class="button" onclick="ocultareldiv('error');">Cerrar</a></center>
+</div>
+</div>
+
+<div id="preview" class="modal">
+<center>
+</br>
+<video id="previewVideo" src="" controls autoplay width="600"></video></br>
+<span>La vista previa puede tardar (streaming).</br> Algunos formatos posiblemente no sean soportados por tu navegador.</br></span></br>
+		<a class="button"onclick="ocultareldiv('preview'); document.getElementById('previewVideo').src='';">Cerrar<a/>
+		</center>
+</div>
+
+
+</body>
+</html>

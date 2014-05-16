@@ -1,0 +1,31 @@
+<?php
+$enlace=mysqli_connect("localhost","root","11235813");
+mysqli_select_db($enlace,"cthulhu_db");
+
+if($_REQUEST['opt']=='log')
+login();
+if($_REQUEST['opt']=='logout')
+logout();
+if($_REQUEST['opt']=='reg')
+reg();
+
+function login(){
+global $enlace;
+$correo=$_REQUEST['correo'];
+$clave=$_REQUEST['password'];
+$query = "SELECT *from cthulhu_users where correo='".$correo."' and password = '".$clave."';";
+$resul = mysqli_query($enlace,$query);
+$datos=mysqli_fetch_array($resul);	
+$_SESSION['correo'] = $datos['correo'];
+$_SESSION['nombre']=$datos['nombre'];
+if(mysql_num_rows($resul) == 1){			
+	echo '<meta http-equiv="refresh" content="0; url=index.php">';
+	}else{
+	echo '<meta http-equiv="refresh" content="0; url=index.php">';	
+	}
+
+}
+function logout(){
+session_destroy();
+echo '<meta http-equiv="refresh" content="0; url=index.php">';
+}

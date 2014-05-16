@@ -1,0 +1,218 @@
+{
+  "url": "https://www.youtube.com/watch?v=1_RZAGnFcI4", 
+  "videos": [
+    {
+      "age_limit": 0, 
+      "annotations": null, 
+      "description": "\"I Just Don't Know What To Do With Myself\" Official Music Video.\nDirected by Sofia Coppola (The Virgin Suicides, Lost in Translation, Somewhere, Marie Antoinette, The Bling Ring) feat. Kate Moss.\n\"Elephant\" iTunes UK: http://itunes.apple.com/gb/album/elephant/id20916010\niTunes US: http://itunes.apple.com/us/album/elephant/id275230921\n\u00a9 2003 XL Recordings Ltd.", 
+      "dislike_count": 79, 
+      "display_id": "1_RZAGnFcI4", 
+      "duration": 174, 
+      "ext": "mp4", 
+      "extractor": "youtube", 
+      "extractor_key": "Youtube", 
+      "format": "22 - 1280x720", 
+      "format_id": "22", 
+      "formats": [
+        {
+          "abr": 48, 
+          "ext": "webm", 
+          "format": "171 - audio only (DASH webm audio)", 
+          "format_id": "171", 
+          "format_note": "DASH webm audio", 
+          "player_url": null, 
+          "preference": -50, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=2565581&ip=8.35.201.54&lmt=1389934953040123&dur=173.225&ipbits=0&itag=171&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=A1CB82109691E9AEA6DC49B3D1D5DED423C1D22F.72072A0B926AED851FB9E2CBF9822375B26A9C87&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes", 
+          "vcodec": "none"
+        }, 
+        {
+          "abr": 128, 
+          "ext": "m4a", 
+          "format": "140 - audio only (DASH audio)", 
+          "format_id": "140", 
+          "format_note": "DASH audio", 
+          "player_url": null, 
+          "preference": -50, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=2752899&ip=8.35.201.54&lmt=1394314068595957&dur=173.290&ipbits=0&itag=140&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=B0F0F00B115737752E7E972A1C9C32BEA719FCFD.58B09400137DA41B4582CA976214658E1FFC6E75&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes", 
+          "vcodec": "none"
+        }, 
+        {
+          "acodec": "none", 
+          "ext": "mp4", 
+          "format": "160 - 192p (DASH video)", 
+          "format_id": "160", 
+          "format_note": "DASH video", 
+          "height": 192, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "192p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=2376037&ip=8.35.201.54&lmt=1394313750982000&dur=173.201&ipbits=0&itag=160&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=16A8EE6287F0078A25E4B14CED05BBABEE734279.EC1C50340F74789B6DF2F3B23E69E08B5B338364&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "ext": "webm", 
+          "format": "242 - 240p (DASH webm)", 
+          "format_id": "242", 
+          "format_note": "DASH webm", 
+          "height": 240, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "240p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=2497557&ip=8.35.201.54&lmt=1389934968015454&dur=173.200&ipbits=0&itag=242&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=3D1C919230206D8C7DAF5232B4AF5CDC9584BA08.ACF27933A1BC7EC14669CBD3A21852DA017D3468&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "acodec": "none", 
+          "ext": "mp4", 
+          "format": "133 - 240p (DASH video)", 
+          "format_id": "133", 
+          "format_note": "DASH video", 
+          "height": 240, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "240p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=5290496&ip=8.35.201.54&lmt=1394313743561764&dur=173.201&ipbits=0&itag=133&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=9283EEB9F16A24F357549B0619CECB89476712A1.7C7DD0E2E072F30C8974DAE7DA0491D5C2171D54&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "ext": "webm", 
+          "format": "243 - 360p (DASH webm)", 
+          "format_id": "243", 
+          "format_note": "DASH webm", 
+          "height": 360, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "360p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=4669632&ip=8.35.201.54&lmt=1389934972047790&dur=173.200&ipbits=0&itag=243&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=5CF7B7A377DF3015B32462AF8A9872B045E26511.03876C8CD1A66FE3DBD695A616DF399ED80E3A24&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "acodec": "none", 
+          "ext": "mp4", 
+          "format": "134 - 360p (DASH video)", 
+          "format_id": "134", 
+          "format_note": "DASH video", 
+          "height": 360, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "360p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=5646662&ip=8.35.201.54&lmt=1394313728088316&dur=173.201&ipbits=0&itag=134&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=D86824858091098FAE45A88DB96EE68D109584F6.AE2D755974107CE9486D677E4E0398DAE19EED63&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "ext": "webm", 
+          "format": "244 - 480p (DASH webm)", 
+          "format_id": "244", 
+          "format_note": "DASH webm", 
+          "height": 480, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "480p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=9008598&ip=8.35.201.54&lmt=1389934972030414&dur=173.200&ipbits=0&itag=244&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=6115674CE8A6A951106E4E0665D61F87E70F174B.A3E3C5CDC5C5B872C5493AF8F32C0023A91ED074&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "acodec": "none", 
+          "ext": "mp4", 
+          "format": "135 - 480p (DASH video)", 
+          "format_id": "135", 
+          "format_note": "DASH video", 
+          "height": 480, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "480p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=11706637&ip=8.35.201.54&lmt=1394313775011816&dur=173.201&ipbits=0&itag=135&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=C183F6CE9C61CFA68C9E61AECACFB9FAF38E6639.24936B06C36D55AC03E259FB3450BBBBDDCD6C06&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "ext": "webm", 
+          "format": "247 - 720p (DASH webm)", 
+          "format_id": "247", 
+          "format_note": "DASH webm", 
+          "height": 720, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "720p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=16157994&ip=8.35.201.54&lmt=1389934979026851&dur=173.200&ipbits=0&itag=247&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=5DD13DEE6EF0DFA1A66D31D65D02AD9B315F73CB.6D29E592DD915D93C956F3D227A10CF97B59A378&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "acodec": "none", 
+          "ext": "mp4", 
+          "format": "136 - 720p (DASH video)", 
+          "format_id": "136", 
+          "format_note": "DASH video", 
+          "height": 720, 
+          "player_url": null, 
+          "preference": -40, 
+          "resolution": "720p", 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?clen=23121571&ip=8.35.201.54&lmt=1394313782873588&dur=173.201&ipbits=0&itag=136&sver=3&gir=yes&expire=1397776839&key=yt5&sparams=clen%2Cdur%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Clmt%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=2295C0F33903FC2BF442E9965141ABA6D433FCC3.A0B7DD28FADC3865620C8917E71628A08BBA3C7E&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=qvaCfuWJNQ4&mv=u&fexp=937417%2C913434%2C936916%2C934022%2C936923&ms=au&ratebypass=yes"
+        }, 
+        {
+          "ext": "3gp", 
+          "format": "17 - 176x144", 
+          "format_id": "17", 
+          "height": 144, 
+          "player_url": null, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=17&sver=3&expire=1397776839&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=9843947B92F23321DC77597714B82478B815B22E.637540D0F7DFFBB3D9DD20A927E1522E2332796A&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au&ratebypass=yes", 
+          "width": 176
+        }, 
+        {
+          "ext": "3gp", 
+          "format": "36 - 320x240", 
+          "format_id": "36", 
+          "height": 240, 
+          "player_url": null, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=36&sver=3&expire=1397776839&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=DD80BD66FD4AB9234E3E1D89A56AEC4CBE8C00D5.F352CF237769BD74B1DD2CBDF2023FA0C771696A&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au&ratebypass=yes", 
+          "width": 320
+        }, 
+        {
+          "ext": "flv", 
+          "format": "5 - 400x240", 
+          "format_id": "5", 
+          "height": 240, 
+          "player_url": null, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=5&sver=3&expire=1397776839&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=AF1DBBFC8DEC8DAAB6430AF129B73DA0E6F8695A.7676FBF9CEFCC0222B07A3E7BFADC154CE217889&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au&ratebypass=yes", 
+          "width": 400
+        }, 
+        {
+          "ext": "webm", 
+          "format": "43 - 640x360", 
+          "format_id": "43", 
+          "height": 360, 
+          "player_url": null, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=43&sver=3&expire=1397776839&ratebypass=yes&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=75393A18278DE19F4E2348EFCBD8C0570CC95CB4.8D80990D2E43E08F9A17E7ACE3921FB165801614&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au", 
+          "width": 640
+        }, 
+        {
+          "ext": "mp4", 
+          "format": "18 - 640x360", 
+          "format_id": "18", 
+          "height": 360, 
+          "player_url": null, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=18&sver=3&expire=1397776839&ratebypass=yes&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=5D6973E586C854C7D54C59D2E25461DBE3457CB7.5015A66A46D2C714C88457AF827EC607963337ED&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au", 
+          "width": 640
+        }, 
+        {
+          "ext": "mp4", 
+          "format": "22 - 1280x720", 
+          "format_id": "22", 
+          "height": 720, 
+          "player_url": null, 
+          "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=22&sver=3&expire=1397776839&ratebypass=yes&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=7CD630CF7FA6C0FD06884C3C98FC6B41FDB63B94.B5AAFE58D4ED6CD542E82E47E0F5FD20A0508DB2&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au", 
+          "width": 1280
+        }
+      ], 
+      "height": 720, 
+      "id": "1_RZAGnFcI4", 
+      "like_count": 5661, 
+      "player_url": null, 
+      "playlist": null, 
+      "playlist_index": null, 
+      "subtitles": null, 
+      "thumbnail": "https://i1.ytimg.com/vi/1_RZAGnFcI4/maxresdefault.jpg", 
+      "title": "The White Stripes | I Just Don't Know What To Do With Myself (Official Video)", 
+      "upload_date": "20100211", 
+      "uploader": "Sam Muir", 
+      "uploader_id": "MEGAINDIEROCK", 
+      "url": "https://r7---sn-a8au-p5qz.googlevideo.com/videoplayback?key=yt5&ip=8.35.201.54&ipbits=0&itag=22&sver=3&expire=1397776839&ratebypass=yes&fexp=937417%2C913434%2C936916%2C934022%2C936923&sparams=id%2Cip%2Cipbits%2Citag%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&signature=7CD630CF7FA6C0FD06884C3C98FC6B41FDB63B94.B5AAFE58D4ED6CD542E82E47E0F5FD20A0508DB2&requiressl=yes&id=o-APallYcl5cl_dazigbV7if__qIdGLh_P6I_AUa34j9DW&mt=1397753568&source=youtube&upn=rRAWuu686BQ&mv=u&ms=au", 
+      "view_count": 1086027, 
+      "webpage_url": "https://www.youtube.com/watch?v=1_RZAGnFcI4", 
+      "webpage_url_basename": "watch", 
+      "width": 1280
+    }
+  ], 
+  "youtube-dl.version": "2014.03.18.1"
+}

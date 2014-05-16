@@ -1,0 +1,165 @@
+<?php
+
+//Cthulhu Downloader Online
+//Back para las sesiones de usuario/historial
+//Autor: Rafael Becerra
+
+$mysql_host = "mysql16.000webhost.com";
+$mysql_database = "a9986078_cthulhu";
+$mysql_user = "a9986078_rafael";
+$mysql_password = "a11235813";
+
+//LOCAL
+$enlace=mysqli_connect("127.0.0.1","root","11235813");
+//REMOTO
+//$enlace=mysqli_connect($mysql_host,$mysql_user,$mysql_password);
+mysqli_select_db($enlace,"cthulhu_bd");
+
+if($_REQUEST['opt']=='log'){
+	login();
+}
+if($_REQUEST['opt']=='logout'){
+	logout();
+}
+if($_REQUEST['opt']=='reg'){
+	reg();
+}
+if($_REQUEST['opt']=='chb'){
+	cambiarFondo();
+}
+if($_REQUEST['opt']=='hist'){
+	addHistorial();
+}
+if($_REQUEST['opt']=='histshow'){
+	mostrarHistorial();
+}
+if($_REQUEST['opt']=='download'){
+	descargarArchivo();
+}
+
+
+function login(){
+	global $enlace;
+	session_start();
+	$correo=$_REQUEST['correo'];
+	$clave=$_REQUEST['password'];
+	$query = "SELECT *from cthulhu_users where correo='".$correo."' and password = '".$clave."'";
+	$resul = mysqli_query($enlace,$query);
+	$datos=mysqli_fetch_array($resul);	
+	$_SESSION['correo'] = $datos['correo'];
+	$_SESSION['nombre'] = $datos['nombre'];
+	$_SESSION['img'] = $datos['imageURL'];
+	if(mysqli_num_rows($resul) == 1){			
+	echo '<meta http-equiv="refresh" content="0; url=index.php">';
+	}else
+	{
+	echo "<script>alert('ERROR');</script>";
+	echo '<meta http-equiv="refresh" content="0; url=index.php">';
+	}
+}
+
+function reg(){
+	global $enlace;
+	$correo=$_REQUEST['correo'];
+	$nombre=$_REQUEST['nombre'];
+	$password=$_REQUEST['password1'];
+
+	$query="INSERT into cthulhu_users (nombre,correo,password) VALUES ('".$nombre."','".$correo."','".$password."') ";
+	$resul=mysqli_query($enlace,$query);
+	if($resul){
+	echo '<meta http-equiv="refresh" content="0; url=index.php">';
+	}else
+	{echo $query;}
+}
+function logout(){
+	session_start();
+	session_destroy();
+	echo '<meta http-equiv="refresh" content="0; url=index.php">';
+}
+
+function cambiarFondo(){
+$archivoOrigen=$_REQUEST['f'];
+copy("images/".$archivoOrigen.".jpg","images/banner/banner.jpg");
+echo '<meta http-equiv="refresh" content="0; url=index.php">';
+}
+
+function addHistorial(){
+	global $enlace;
+	$media=utf8_decode($_REQUEST['v']);
+	$source=utf8_decode($_REQUEST['fuente']);
+	$email=$_REQUEST['usuario'];
+	$sql="INSERT into cthulhu_historial (nombreMedia,fuenteMedia,correoHist) values ('".$media."','".$source."','".$email."')";
+	$resul=mysqli_query($enlace,$sql);
+	if($resul){
+		echo 'Agregado al historial';
+	}else{
+		echo 'ERROR';
+	}
+}
+
+function mostrarHistorial()
+{
+	global $enlace;
+	$email=$_REQUEST['user'];
+	$sql="SELECT *FROM cthulhu_historial WHERE correoHist='".$email."' group by nombreMedia";
+		$resul=mysqli_query($enlace,$sql);
+		while($datos=mysqli_fetch_array($resul)){		
+			echo '<li>'.utf8_encode($datos['nombreMedia']).'. Fuente: '.$datos['fuenteMedia'].'</li>';
+		}
+}
+
+//Función para descargar archivos porque firefox no acepta estándares HTML5 porque son unos malditos maricos
+function descargarArchivo($archivo, $downloadfilename = null){
+//$archivo=$_REQUEST['url']; $downloadfilename=$_REQUEST['name'];
+if (file_exists($archivo)) {
+        $downloadfilename = $downloadfilename !== null ? $downloadfilename : basename($archivo);
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . $downloadfilename);
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($archivo));
+        ob_clean();
+        flush();
+        readfile($archivo);
+        exit;
+}
+}
+
+function ObtenerNavegador($user_agent) {
+     $u_agent = $_SERVER['HTTP_USER_AGENT'];
+        $ub = '';
+        if(preg_match('/MSIE/i',$u_agent))
+        {
+            $ub = "Internet Explorer";
+        }
+        elseif(preg_match('/Firefox/i',$u_agent))
+        {
+            $ub = "Mozilla Firefox";
+        }
+        elseif(preg_match('/Safari/i',$u_agent))
+        {
+            $ub = "Apple Safari";
+        }
+        elseif(preg_match('/Chrome/i',$u_agent))
+        {
+            $ub = "Google Chrome";
+        }
+        elseif(preg_match('/Flock/i',$u_agent))
+         {
+            $ub = "Flock";
+        }
+        elseif(preg_match('/Opera/i',$u_agent))
+        {
+            $ub = "Opera";
+        }
+        elseif(preg_match('/Netscape/i',$u_agent))
+        {
+            $ub = "Netscape";
+        }
+        return $ub;
+}
+
+

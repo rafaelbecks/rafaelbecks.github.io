@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--
+Mi portafolio porque soy burda de ególatra.
+-->
+<html>
+	<head>
+		<title>Rafael Becerra - Desarrollador de Software</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="images/coffee.png"/>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="css/fontSourceSansPro.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+<script type="text/javascript">
+//Ventana Modal
+function mostrareldiv(divMostrar) {
+document.getElementById(divMostrar).style.display = "block" ; // permite asignar display:block al elemento #modal
+}
+
+function ocultareldiv(divOcultar) {
+document.getElementById(divOcultar).style.display = "none" ; // permite ocultar el contenedor al hacer clic en alguna parte de éste mediante display:none en el elemento #modal
+}
+
+</script>
+
+
+		<!-- Wrapper-->
+		<div id="wrapper">
+				
+				<!-- Nav -->
+			<nav id="nav">
+			     <a href="#me" class="fa fa-coffee active"><span>Inicio</span></a>
+			     <a href="#work" class="fa fa-code"><span>Trabajo</span></a>
+			     <a href="#email" class="fa fa-envelope"><span>Correo</span></a>
+			     <a href="http://twitter.com/rafaelbecks_" target="_blank" class="fa fa-twitter"><span>Twitter</span></a>
+			     <a href="https://github.com/rafaelbecks" target="_blank" class="fa fa-github"><span>GitHub</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Rafael Becerra</h1>
+									<span class="byline">{ Desarrollador de Software }</span>
+
+								</header>
+								<a href="#work" class="jumplink pic">
+						<span class="jumplink arrow fa fa-chevron-right"><span>Trabajo</span></span>
+					<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work --> 
+							<article id="work" class="panel">
+								<header>
+									<h2>Trabajos</h2>
+								</header>
+								<p>
+Soy un desarrollador especializado en PHP/MySQL. Co-Fundador de <a href="http://www.arp-software.com" target="_blank">ARP Software</a>. También tengo experiencia en auditoría y análisis de software, así como en otras tecnologías. Aquí puedes ver algunos de mis proyectos publicados y en desarrollo. </br></br>Haz clic sobre la imagen para mostrar información relacionada.
+								</p>
+								<section class="is-gallery">
+									<div class="row half">
+										<div class="4u">
+<!-- ABLUTHIER  !-->				
+											<a onClick="mostrareldiv('p1');" class="image image-full"><img src="images/thumbs/1.jpg" alt=""></a>
+										</div>
+
+				<div id="p1" class="modal" style="display:none" onClick="ocultareldiv('p1');">
+				<div class="contenido-interno">
+					<h2>Sitio Oficial Abluthier</h2>
+				<a href="images/1.jpg"><img src="images/1.jpg" width="700"/></a>
+				<span>Sitio web estático, con galerías personalizadas, contacto. Responsive Design</span></br>
+				<a href="http://www.abluthier.com.ve" target="_blank">Visitar Sitio</a>
+				</div>
+				</div>
+<!-- EPILEPSIA 2.0  !-->				
+										<div class="4u">
+								<a onClick="mostrareldiv('p2');" class="image image-full"><img src="images/thumbs/2.jpg" alt=""></a>
+										</div>
+
+<div id="p2" class="modal" style="display:none" onClick="ocultareldiv('p2');">
+				<div class="contenido-interno">
+					<h2>Epilepsia 2.0. Blog Personal.</h2>
+				<a href="images/2.jpg"><img src="images/2.jpg" width="700"/></a>
+				<span>Blog dinámico, usando YITH CMS. Responsive Design</span></br>
+				<a href="http://www.epilepsiaradiactiva.comyr.com" target="_blank">Visitar Sitio</a>	
+				</div>
+				</div>
+<!-- GANDALF IDE  !-->					
+									<div class="4u">
+							<a onClick="mostrareldiv('p3');" class="image image-full"><img src="images/thumbs/3.jpg" alt=""></a>
+										</div>
+				<div id="p3" class="modal" style="display:none" onClick="ocultareldiv('p3');">
+				<div class="contenido-interno">
+					<h2>GANDALF IDE.</h2>
+				<a href="images/3.jpg"><img src="images/3.jpg" width="700"/></a>
+				<span>Entorno de Desarrollo Integrado (IDE) escrito en PHP. Orientado a desarrollo web y colaborativo.</span></br>
+				<a href="#">En desarrollo</a>	
+				</div>
+				</div>
+
+
+									</div>
+<!-- YITH CMS  !-->				
+									<div class="row half">
+										<div class="4u">
+											<a onClick="mostrareldiv('p4');" class="image image-full"><img src="images/thumbs/4.jpg" alt=""></a>
+										</div>
+	<div id="p4" class="modal" style="display:none" onClick="ocultareldiv('p4');">
+				<div class="contenido-interno">
+					<h2>YITH CMS.</h2>
+				<a href="images/4.jpg"><img src="images/4.jpg" width="700"/></a>
+<span>Gestor de Contenidos (CMS) escrito en  PHP y usando MySQL. Post, perfil, etiquetas, borradores, administración básica del sitio</br>
+				Usado en <a href="#">Epilepsia 2.0</a> y <a href="#"> Kachoo Kachoo</a></span>
+				</div>
+				</div>
+			
+<!-- ARP SOFTWARE  !-->				
+							<div class="4u">
+											<a class="image image-full"><img src="images/thumbs/5.jpg" alt="" onclick="mostrareldiv('p5');"></a>
+	<div id="p5" class="modal" style="display:none" onClick="ocultareldiv('p5');">
+				<div class="contenido-interno">
+					<h2>ARP Software</h2>
+				<a href="images/5.jpg"><img src="images/5.jpg" width="700"/></a>
+<span>Desarrollo del Sitio. Co-fundador. Equipo de desarrolladores especializados ingeniería de software ofreciendo los mejores servicios en desarrollo de aplicaciones web.	</span></br>
+				<a href="#">Visitar Sitio</a>	
+				</div>
+				</div>
+<!-- KACHOO KACHOO  !-->										</div>
+									<div class="4u">
+											<a class="image image-full"><img src="images/thumbs/6.jpg" alt="" onclick="mostrareldiv('p6');"></a>
+	<div id="p6" class="modal" style="display:none" onClick="ocultareldiv('p6');">
+				<div class="contenido-interno">
+					<h2>Kachoo Kachoo - Blog Personal</h2>
+				<a href="images/6.jpg"><img src="images/6.jpg" width="700"/></a>
+<span>Blog Personal de Andrea Blasco. Powered by YITH CMS</span></br>
+				<a href="http://kachookachoo.comlu.com">Visitar Sitio</a>	
+				</div>
+				</div>
+					</div>
+			
+				</div>
+<!-- CTHULHU DOWNLOADER  !-->				
+						<div class="row half">
+										<div class="4u">
+											<a class="image image-full"><img src="images/thumbs/7.jpg" alt="" onclick="mostrareldiv('p7')"></a>
+	<div id="p7" class="modal" style="display:none" onClick="ocultareldiv('p7');">
+				<div class="contenido-interno">
+					<h2>Cthulhu Downloader</h2>
+				<a href="images/7.jpg"><img src="images/7.jpg" width="700"/></a>
+<span>GUI para el Script youtube-dl. Descarga videos de youtube. Lenguajes: Java/Python.</span></br>
+				<a href="#">Código Fuente</a>		</br>
+				</div>
+				</div>
+	
+<!-- SQLlib  !-->				
+								</div>
+<div class="4u">
+			<a class="image image-full"><img src="images/thumbs/sqlLIB.jpg" alt="" onClick="mostrareldiv('p8');"></a>
+										</div>
+	<div id="p8" class="modal" style="display:none" onClick="ocultareldiv('p8');">
+				<div class="contenido-interno">
+					<h2>SQLlib v1.0</h2>
+				<a href="images/sqlLIB.jpg"><img src="images/sqlLIB.jpg" width="700"/></a>
+<span>Librería escrita en JAVA para facilitar el manejo de consultas SQL. </br>Ahora tus consultas en JAVA son más fáciles.
+</br>
+				Código fuente disponible en <a href="#">GitHub</a></span>	
+				</div>
+				</div>
+
+<!-- GANDALF EDITOR  !-->				
+<div class="4u">
+											<a class="image image-full"><img src="images/thumbs/editor-gandalf.jpg" alt="" onclick="mostrareldiv('p9');"></a>
+
+<div id="p9" class="modal" style="display:none" onClick="ocultareldiv('p9');">
+				<div class="contenido-interno">
+					<h2>Editor de Gandalf IDE</h2>
+				<a href="images/editor-gandalf.jpg"><img src="images/editor-gandalf.jpg" width="700"/></a>
+<span>Editor de código para el Entorno de Desarrollo Integrado Gandalf. Ace API, PHP, JavaScript.</span></br>
+				<a href="#">En desarrollo</a>		</br>
+				</div>
+				</div>
+										</div>
+									</div>
+
+								</section>
+<p>Experiencia con: <i>PHP, MySQL, HTML5, CSS3, Java, JavaScript, ExtJS, WordPress, LampServer, Linux.</i></p>
+							</article>
+
+						<!-- Email -->
+							<article id="email" class="panel">
+								<header>
+									<h2>Contáctame</h2>
+							<span>Tlf: (+58-0416-193-2391)</span>
+								</header>
+
+								
+			<span>Con tu cliente de correo o escribe a <strong> <a href="mailto:rafaelbecks93@gmail.com">rafaelbecks93@gmail.com</a></strong></span></br></br>
+			<a class="button" onclick="location.href='CV/';" >Curriculum Vitae</a></br></br>
+				<span>Barquisimeto. Edo Lara. </br>Venezuela</span>
+						<p><strong></br>Deja un mensaje.</strong></p>
+						<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'rafaelbecks'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+						
+							</article>
+
+
+					</div>
+		
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="links">
+							<li>2014 &copy; Rafael A. Becerra B.</li>
+						</ul>
+					</div>
+		
+			</div>
+
+	</body>
+</html>
