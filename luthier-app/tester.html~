@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Luthier App</title>
+
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+		
+		<!-- jQuery / jQueryMobile Scripts -->
+        <script src="js/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:200' rel='stylesheet' type='text/css'>
+    </head>
+    <body id="webapptester">
+<script>
+var fondo=Math.round(Math.random()*(1));
+console.log(fondo);
+document.getElementById('webapptester').style.backgroundImage="url('images/backs/"+fondo+".jpg')";
+</script>
+        <img id="phone" src="images/phone2.png"/>
+	<iframe id="appframe" src="index.html"></iframe>    
+	<section id="textinfo"><h1><strong>Luthier App</strong></h1>
+<p>Luthier App es una aplicaci&oacute;n sencilla para Android con herramientas para el Luthier. Incluye una calculadora de trastes y un diapas&oacute;n digital sencillo (haciendo click en el icono).</p> <p><strong>Pru&eacute;bala Online!</strong>
+ </p>
+	<a href="#"><img src="images/android_badge.png" width="180"/></br></a>
+</br>
+	<span>&copy; <a href="http://rafaelbecks.github.io" target="_blank">Rafael Becerra</a></span>
+</section>
+    </body>
+</html>

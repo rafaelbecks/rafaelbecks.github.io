@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Titillium WebThin'), local('TitilliumWeb-Thin'), url(font/anMUvcNT0H1YN4FII8wpr3XqdloEk0Ij5qwGW4qO9RM.woff) format('woff');
+}
+
+
+body{
+font-family: 'Titillium Web', sans-serif;
+}
+
+#webapptester{
+color:#fff;
+background-repeat: no-repeat;
+background-size:cover;
+
+}
+
+#appframe{
+position:absolute;
+height: 510px;
+width: 296px;
+margin-top:80px;
+margin-left:139px;
+border:0;
+}
+
+#textinfo{
+background: rgba(0,0,0,.7);
+padding:15px;
+border-radius:20px;
+margin-top:100px;
+margin-left:660px;
+width:35%;
+position:absolute;
+text-align:center;
+}
+
+#textinfo h1{
+font-size:30px;
+font-weight:200;
+}
+
+#textinfo p {
+font-size:20px;
+}
+
+#textinfo a {
+text-decoration:none;
+color:#fff;
+}
+#phone{
+margin-left:120px;
+position:absolute;
+}
+
+#button {
+			background-color: #2a8a86;
+			border: 0;
+			border-radius: 2.5em;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			height: 3.5em;
+			line-height: 3.5em;
+			outline: 0;
+			font-size:20px;
+			padding: 0 2em 0 2em;
+			position: relative;
+			text-align: center;
+			font-size:1em;
+			text-decoration: none;
+
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-o-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+
+#map-canvas {
+        height: 300px;
+	width: 500px;
+        margin: 0px;
+        padding: 0px
+      }
+
+#modal {
+	display:block;
+width:100%; 
+	height:100%; 
+	position:fixed; 
+	background-color: #e6e5e0; 
+	top:0; 
+	left:0; 
+	z-index:99999999;
+	padding-top:100px;
+	font-family: 'TitilliumWeb' sans-serif';
+		}
+
+#mapCurrent{
+border-radius:15px;
+padding-top:4px;
+}
+
+#mainFrameInfo{
+background: url("../images/cool-frets.jpg");
+color:#fff;
+}
+
+#info{
+text-align:justify;
+}
+
+#mypanel ul li a{
+color:#fff;
+}
+#mypanel ul li{
+color:#fff;
+}
+
+#tablaTrastes{
+display:block;
+}
+
+

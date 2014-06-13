@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Luthier App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+		<!-- jQuery / jQueryMobile Scripts -->
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.mobile-1.3.0.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js"></script>
+<script src="js/timbre.js"></script>
+
+<script>
+
+</script>
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b'>
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="info.html" data-ajax="true"><i class='ui-icon-info'></i></a>
+            <h1>Luthier App</h1>
+        </div>
+        
+        <div data-role="content">   
+
+
+
+		
+	        <div class='inset' id="mainFrame">
+		<center>
+	            <h2>C&aacute;lculo de Trastes</h2>
+			<img src="images/dia.png" width="140"/ onclick="diapason();">
+
+	<script>
+	switchtuner=0;
+	function diapason()
+	{
+	if(switchtuner==0){
+	sin = T("sin").play();
+	sin.set({freq:440});
+	switchtuner=1;
+	}else{
+	sin.pause();
+	switchtuner=0;} 
+	}
+	</script>
+
+                        <fieldset data-role="controlgroup">
+
+                            <legend>Numero de Trastes<legend>
+ 
+                        <input type="number" id="numTrastes" value="" data-clear-btn="true" placeholder="Numero">
+ 			<legend>Medida Escala<legend>
+                        <input type="number"  id="medidaEscala" value="" data-clear-btn="true" placeholder="Numero">
+<center><form>
+<span id="message" style="color:red;"></span></br><button type="button" data-theme="b" onclick="calcular();">Calcular</button></center></form>
+			</fieldcontain>                   
+
+  </div>
+	<script>
+	function calcular(){
+	var numTraste= parseFloat(document.getElementById("numTrastes").value);
+	var medidaEscala= parseFloat(document.getElementById("medidaEscala").value);	
+	if(numTraste>0 || medidaEscala>0)	
+	CalcularDistancia(numTraste,medidaEscala);
+	else
+	document.getElementById("message").innerHTML="No puedes introducir valores negatios";
+	}
+	</script><center>
+  	     <div class='inset' id="tablaTrastes">
+
+
+	</div>    
+</center>
+
+        </div>
+	      
+    </div>
+    
+    </body>
+</html>
