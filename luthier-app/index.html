@@ -42,21 +42,36 @@
         
         <div data-role="content">   
 
+<div data-role="popup" id="popupDialog" data-theme="a">
+            
+                <div data-role="header">
+                </div>
 
+                <div data-role="content" data-theme="b">
 
-		
+	<center>
+                  	   <label>Frecuencia</label>
+                            <input type="number" id="frecuencia" value="440" data-clear-btn="true" placeholder="Numero">
+                    <div class='showastabs center'><button type="button" data-theme="b" onclick="diapason();">Play</button>
+                           <a href="dialog/index.html" data-rel="back" data-icon="ok" data-iconpos="left" data-role="button" data-inline="true">Aceptar</a>
+                         </center>
+                    </div>
+                    
+                </div>
+
 	        <div class='inset' id="mainFrame">
 		<center>
 	            <h2>C&aacute;lculo de Trastes</h2>
-			<img src="images/dia.png" width="140"/ onclick="diapason();">
+			<a href="#popupDialog" data-rel="popup" data-position-to="window" data-role="button" data-transition="pop" data-inline="true"><img src="images/dia.png" width="140"/></a>
 
 	<script>
 	switchtuner=0;
 	function diapason()
 	{
+	frecuencia = parseInt(document.getElementById("frecuencia").value);
 	if(switchtuner==0){
 	sin = T("sin").play();
-	sin.set({freq:440});
+	sin.set({freq:frecuencia});
 	switchtuner=1;
 	}else{
 	sin.pause();
