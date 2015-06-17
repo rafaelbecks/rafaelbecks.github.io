@@ -1,0 +1,79 @@
+<script type="text/javascript">
+$(".left_menu ul li").click(function(){
+	$("#sub_"+this.id).slideToggle("medium");
+	$("#"+this.id).toggleClass("active_menu");
+	$("#sub_"+this.id).toggleClass("transparent");
+});
+$("#especialidades").trigger("click");
+</script>
+
+<section class="cursos view">
+	<section class="content">
+		<center class="texto_principal">
+				<h1 class="black wow fadeInDown">CURSOS</h1>
+				<div class="triangle"></div>
+				<p class="black body_text wow fadeIn">Si estás interesado en experimentar todas las cosas nuevas que te ofrece el increible mundo submarino, en SCUBATEC DIVE CENTER te ofrecemos todos los cursos, desde las primeras experiencias, pasando por cursos iniciales hasta las especializaciones sin dejar de lado el fascinante mundo del buceo Técnico. Y si crees que esta era la profesión que estabas buscando también te podemos ayudar... Ven a vivir laexperiencia más impresionante de tu vida. El buen entrenamiento de una actividad como esta comienza en un salón de clase, nosotros en SCUBATEC tenemos toda la infraestructura necesaria para lograr que cumplas todos los objetivos requeridos en cada uno de los niveles de entrenamiento </p>
+		</center>	
+
+		<div class="main_content">
+			<aside class="menu_cursos">
+				<nav class="left_menu">
+					<ul>
+						<li id="discover">DISCOVER SCUBA DIVING</li>
+						<li id="open_water">OPEN WATER DIVER</li>
+						<li id="reactive">RE ACTIVE (REFRESCAMIENTO)</li>
+						<li id="advanced">ADVANCED OPEN WATER</li>
+						<li id="especialidades">ESPECIALIDADES</li>
+							<ul class="submenu" id="sub_especialidades">
+									<li> - Buceo Desde Bote</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+									<li> - Fotografía Digital Subacuática</li>
+							</ul>
+						<li id="rescue">RESCUE DIVER</li>
+						<li id="emergency">EMERGENCY FIRST RESPONSE</li>
+						<li id="cursos_niños">CURSOS PARA NIÑOS</li>
+						<li id="cursos_profesionales">CURSOS PROFESIONALES</li>
+						<li id="cursos_tecnicos">CURSOS BUCEO TÉCNICO</li>
+
+					</ul>
+				</nav>
+			</aside>
+			<section class="info_form wow fadeIn">
+				<div class="top_section">
+					<h1 class="yellow opensans">BUCEO DESDE BOTE</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					
+				</div>
+				<div class="form">
+					<center><h3 class="yellow">CONTACTENOS <span class="white">para mayor información</span></h3></center>
+					
+					<form class="contacto">
+							<center>
+								<label>Nombre y Apellido</label>
+								<input type="text" placeholder="Nombre y Apellido"/></br></br>
+								<label>Teléfono:</label>
+								<input type="text" placeholder="Teléfono"/></br></br>
+								<label>Email:</label>
+								<input type="text" placeholder="Email"/></br></br>
+								<label class="lbltextarea">Comentario</label>
+								<textarea placeholder="Buceo desde bote" rows="4"></textarea></br></br>
+								<label>Escriba los caracteres que ve en la imagen</label>
+								<input type="text" placeholder="Captcha"/></br></br>
+								<button class="read_more enviar">ENVIAR</button>
+							</center>
+					</form>
+				</div>
+			</section>
+		</div>
+	</section>
+</section>	
