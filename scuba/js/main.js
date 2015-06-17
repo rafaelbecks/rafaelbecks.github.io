@@ -15,4 +15,15 @@ scuba_site.config(function ($stateProvider, $urlRouterProvider, $locationProvide
             	url: '/cursos',
             	templateUrl: 'cursos.html'
             })
+
+            .state('actividades',{
+            	url: '/actividades',
+            	templateUrl: 'actividades.html'
+            })
+
+            .state('tienda',{
+            	url: '/tienda',
+            	templateUrl: 'tienda.html'
+            })
+
 });

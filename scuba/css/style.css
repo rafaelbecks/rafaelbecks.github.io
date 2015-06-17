@@ -522,6 +522,76 @@ font-family: 'OpenSansRegular', sans-serif;
   right: 12.5%;
 }
 
+
+/* ACTIVIDADES */
+
+
+.actividades,.tienda{
+    background:url("../img/bg.png");
+  background-size:cover;
+  background-position: center;
+}
+
+.no_float{
+  float:none;
+}
+
+.actividades .row_content{
+    padding: 8px;
+  background: rgba(255,255,255,.5);
+  margin: 29px auto;
+}
+.paging{
+  float:right;
+  margin-bottom: 30px;
+}
+.arrow{
+    background: rgba(236, 252, 149, .5);
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 27px;
+  border-radius: 20px;
+     transition: all 0.6s ease-in-out !important;
+  -webkit-transition: all 0.6s ease-in-out !important;
+  -ms-transition: all 0.6s ease-in-out !important;
+  -moz-transition: all 0.6s ease-in-out !important;
+  -o-transition: all 0.6s ease-in-out !important;
+}
+
+.arrow:hover{
+      background: rgba(0, 0, 0, .3);
+}
+
+.articles_blue{
+  padding:20px;
+  background: rgba(12, 105, 186, 0.7);
+  color: #fff;
+  margin:20px auto;
+}
+
+.articles_blue p{
+  text-align: justify;
+  margin:25px auto;
+}
+
+
+/* TIENDA*/
+
+.producto_tienda .title{
+    width: 100%;
+  text-align: center;
+  color: #1564A9;
+  background: #e9e8e8;
+  padding: 3px;
+}
+
+.lista_productos{
+  margin-bottom: 25px;
+}
+
+.img_tienda img{width: 100%;}
 /*Scroll*/
 ::-webkit-scrollbar { width: 4px;  height: 4px; background-color: #F0F0F0;}    
 ::-webkit-scrollbar-track { background-color: #00CCCC;} 
