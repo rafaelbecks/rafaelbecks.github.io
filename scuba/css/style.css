@@ -57,7 +57,7 @@ p{
 
 .main{
   color: #fff;
-  background: url("../img/banner1.pngjpg");
+  background: url("../img/banner1.jpg");
   height: 65vh;
   width: 100%;
   background-size: cover;
@@ -555,7 +555,7 @@ font-family: 'OpenSansRegular', sans-serif;
 
 
 .actividades,.tienda{
-    background:url("../img/bg.png");
+    background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
 }
@@ -635,7 +635,7 @@ font-family: 'OpenSansRegular', sans-serif;
 
 /*contacto*/
 .contacto_v{
-  background:url("../img/bg.png");
+  background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
   height: 1320px;
@@ -747,7 +747,7 @@ h4{
 
 /*STAFF*/
 .staff_v{
-  background:url("../img/bg.png");
+  background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
   height: 1260px;
