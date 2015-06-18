@@ -29,8 +29,40 @@
 <body>
 <script>
  new WOW().init();
-</script>
+var openned=0;
 
+ function openPanel(){
+	$("body").scrollTop(0);
+	if(openned==0){
+		$(".all").animate({
+			right:"20vw"
+		},3);	
+		openned=1;	
+		$(".items_panel").show();
+	}else{
+		$(".all").animate({
+			right:"0vw"
+		},3);	
+		openned=0;
+		$(".items_panel").hide();
+	}
+
+	$(".side_panel").toggleClass("open_panel");
+	$("body").toggleClass("body_fixed");
+}
+</script>
+		<!--	<div class="side_panel">
+				<nav class="items_panel">
+					<ul>
+						<li class="item_menu">CURSOS</li>
+						<li class="item_menu">ACTIVIDADES</li>
+						<li class="item_menu">TIENDA</li>
+						<li class="item_menu" onclick="openPanel();">Salir</li>
+					</ul>
+				</nav>
+			</div>	
+-->
+<div class="all">
 		<header>
 	<div class="content">
 			<div class="logo_left">
@@ -44,6 +76,8 @@
 					<li class="ion-social-instagram"></li>
 				</ul>			
 
+				<i class="ion-navicon-round bar_responsive" onclick="$('.responsive_menu').slideToggle();"></i>
+
 				<nav class="menu">
 					<ul>
 						<li><a href="tel:+582124356594">+58-2124356594</a></li>
@@ -55,13 +89,24 @@
 						<li ui-sref-active="active_mod" ui-sref="cursos">CURSOS</li>
 						<li ui-sref-active="active_mod" ui-sref="actividades">ACTIVIDADES</li>
 						<li ui-sref-active="active_mod" ui-sref="tienda">TIENDA</li>
-						<li ui-sref-active="active_mod">SCUBATEC</li>
-						<li ui-sref-active="active_mod">CONTACTO</li>
+						<li ui-sref-active="active_mod" ui-sref="staff">SCUBATEC</li>
+						<li ui-sref-active="active_mod" ui-sref="contacto">CONTACTO</li>
 					</ul>
 
 				</nav>	
 			</div>
-	</div>			
+	</div>
+	
+
+		<div class="responsive_menu">
+					<ul>
+						<li ui-sref-active="active_mod" ui-sref="cursos">CURSOS</li>
+						<li ui-sref-active="active_mod" ui-sref="actividades">ACTIVIDADES</li>
+						<li ui-sref-active="active_mod" ui-sref="tienda">TIENDA</li>
+						<li ui-sref-active="active_mod" ui-sref="staff">SCUBATEC</li>
+						<li ui-sref-active="active_mod" ui-sref="contacto">CONTACTO</li>
+					</ul>
+		</div>
 		</header>
 
 <ui-view  autoscroll="true"></ui-view>
@@ -109,11 +154,12 @@
 	<footer>
 	<div class="content">
 		<div class="row">
-			<div class="col-md-9 txtleft">SCUBATEC DIVE CENTER, C.A RIF J-3314744208 |  <span class="tiny">2015 Copyright &copy; Todos los derechos reservados</span></div>
+			<div class="col-md-9 txtleft">SCUBATEC DIVE CENTER, C.A <span class="rif">RIF J-3314744208 |</span>  <span class="tiny">2015 Copyright &copy; Todos los derechos reservados</span></div>
 			<div class="col-md-3 txtright"><span class="very_tiny">Diseño y Hospedaje</span> &nbsp;&nbsp;<img src="img/logosw.png" /></div>
 		</div>
 	</div>
 </footer>
+</div>
 </body>
 
 </html>

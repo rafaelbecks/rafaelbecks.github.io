@@ -26,4 +26,14 @@ scuba_site.config(function ($stateProvider, $urlRouterProvider, $locationProvide
             	templateUrl: 'tienda.html'
             })
 
+            .state('contacto',{
+            	url: '/contacto',
+            	templateUrl: 'contacto.html'
+            })
+            .state('staff',{
+                url: '/staff',
+                templateUrl: 'staff.html'
+            })
+
+
 });
