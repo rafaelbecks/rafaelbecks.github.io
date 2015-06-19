@@ -395,7 +395,7 @@ footer{
 /* CURSOS */
 
 .view{
-  padding-top:10%;
+  padding-top:20vh;
 }
 
 .cursos{
@@ -460,6 +460,9 @@ font-family: 'OpenSansRegular', sans-serif;
   border-bottom: none !important;
   padding: 10px !important;
   cursor: pointer !important;
+    text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: nowrap;
    transition: all 0.6s ease-in-out !important;
   -webkit-transition: all 0.6s ease-in-out !important;
   -ms-transition: all 0.6s ease-in-out !important;
@@ -467,7 +470,12 @@ font-family: 'OpenSansRegular', sans-serif;
   -o-transition: all 0.6s ease-in-out !important;
 }
 
-.left_menu ul li:hover,.active_menu{
+.left_menu ul li:hover{
+  background:rgba(0,0,0, 0.5);
+  color:#ecfc95;
+}
+
+.active_menu{
   background:rgba(0,0,0, 0.5);
   color:#ecfc95;
 }
@@ -796,6 +804,75 @@ h4{
 .info_staff{
 }
 
+/*EVENTOS*/
+
+.eventos_v{
+  background:url("../img/bg.jpg");
+  background-size:cover;
+  background-position: center;
+  height: 1120px;
+}
+
+.evento_img{
+  width: 435px;
+}
+
+.p_eventos{
+  font-size: 11px;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.p_eventos span{
+  font-weight: bold;
+}
+
+.read_more_e{
+    float: right;
+  border: 0;
+  padding: 8px;
+  color: #fff;
+  background: #29abe2;
+       transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+.read_more_e:hover{
+    background: #0071bc;
+}
+
+.contacto_e{
+  margin-top:30px;
+}
+.contacto_e input, .contacto_e textarea{
+    padding: 7px;
+  border-radius: 5px;
+  border: none;
+  width: 270px;
+  -moz-box-shadow: inset 0 0 2px #000000;
+  -webkit-box-shadow: inset 0 0 2px #000000;
+  box-shadow: inset 0 0 2px #000000;
+}
+
+.contacto_e label{
+  width: 165px;
+  font-weight: 300;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.contacto_e button{
+    position: relative;
+  right: 11%;
+}
+
+.body_text_mobile{
+  display: none;
+}
+
 /* RESPONSIVE */
 /*
 .side_panel{
@@ -855,10 +932,17 @@ h4{
   display: inline-block;
   margin-left: 12px;
 }
+
+.info_form{display: none}
+.menu_cursos{
+    width: 100%;
+  text-align: center;
+}
+
 }
 
 @media only screen and (max-width : 990px) {
-.menu,.social,.menu_nav{
+.menu,.social,.menu_nav,.paging{
   display: none;
 }
 
@@ -880,11 +964,20 @@ h4{
   display: none;
 }
 
+.enterate{
+
+}
+
+.read_more{
+  float:none;
+    margin-bottom: 20px;
+}
+
 
 }
 
 @media only screen and (max-width : 767px) {
-.menu,.menu_nav,.img_text,.tiny{
+.menu,.menu_nav,.img_text,.tiny,.paging,.body_text{
   display: none;
 }
 
@@ -903,6 +996,7 @@ h4{
 
 .read_more{
   float:none;
+    margin-bottom: 20px;
 }
 
 .img_text_aventura{
@@ -914,24 +1008,30 @@ h4{
   float:none;
 }
 
+.body_text_mobile{
+  text-align: justify;
+  display: block;
+}
 
 }
 
 @media only screen and (max-width : 480px) {
-.img_text,.rif,.tiny,.txtleft{
+.img_text,.rif,.tiny,.txtleft,.paging,.info_form,.body_text{
   display: none;
 }
 
+
+
+.menu_cursos{
+    width: 100%;
+  text-align: center;
+}
 .logo_left{
     margin: 4% auto;
 }
 
 .logo_left img{
   height:82%;
-}
-
-.read_more{
-  float:none;
 }
 
 .img_text_aventura{
@@ -965,9 +1065,6 @@ h4{
   display: none;
 }
 
-.read_more{
-  float:none;
-}
 }
 
 

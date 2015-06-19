@@ -34,6 +34,9 @@ scuba_site.config(function ($stateProvider, $urlRouterProvider, $locationProvide
                 url: '/staff',
                 templateUrl: 'staff.html'
             })
-
+            .state('eventos',{
+                url: '/eventos',
+                templateUrl: 'eventos.html'
+            })  
 
 });

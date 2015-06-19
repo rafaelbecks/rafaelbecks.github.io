@@ -51,6 +51,12 @@
 	$(".side_panel").toggleClass("open_panel");
 	$("body").toggleClass("body_fixed");
 }*/
+
+$(document).ready(function(){
+	$(".responsive_menu ul li").click(function(){
+		$(".responsive_menu").slideToggle();
+	})
+});
 </script>
 		<!--	<div class="side_panel">
 				<nav class="items_panel">
@@ -115,20 +121,20 @@
 <section class="contact_info">
 	<div class="content wow fadeIn">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 					<div class="row">
-						<div class="col-md-6"><img width="100%" class="enterate" src="img/enterate.png"/></div>
-						<div class="col-md-6"><h5 class="black">ENTÉRATE</h5>
+						<div class="col-md-6 col-sm-6"><img width="100%" class="enterate" src="img/enterate.png"/></div>
+						<div class="col-md-6 col-sm-6"><h5 class="black">ENTÉRATE</h5>
 						<p class="tiny">Cuándo salimos, a dónde vamos y recibe tips para bucear en Venezuela</p>
 						<input type="text" class="registro_mail" placeholder="Escribe tu mail"/>
 						<button class="read_more registrate">Regístrate</button>
 					</div>
 					</div>				
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 					<div class="row">
-						<div class="col-md-6"><img width="100%" class="enterate" src="img/tienda.png"/></div>
-						<div class="col-md-6"><h5 class="red">TIENDA</h5>
+						<div class="col-md-6 col-sm-6"><img width="100%" class="enterate" src="img/tienda.png"/></div>
+						<div class="col-md-6 col-sm-6"><h5 class="red">TIENDA</h5>
 						<p class="tiny">Av. Mara, C.C Macaracuay, Pb. Local 16-B, Caracas, Venezuela.</br> Lun-Vie de 10:00am a 9:00pm</p>
 						<p>+58 212-3953300</br>
 						+58 212-3953300</br>
@@ -137,7 +143,7 @@
 						</div>
 					</div>								
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 					<div class="row">
 						<div class="col-md-6"><img width="100%" class="enterate" src="img/mapa.png"/></div>
 						<div class="col-md-6"><h5 class="red">OPERADORA</h5>
