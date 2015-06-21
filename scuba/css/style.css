@@ -119,12 +119,16 @@ header .content{
   height: 100%;
   width: 20%;
   padding: 2.5%%;
+  float: left;
   display: inline-block;
 }
 
 .logo_left img{
     width: 100%;
     cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .menu{
@@ -199,6 +203,9 @@ header .content{
   text-align: right;
   height: 100%;
   float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .input_buscar{
@@ -377,6 +384,9 @@ footer{
   list-style: none;
   font-size: 17px;
   margin-left: 48px;
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .social li{
@@ -646,7 +656,7 @@ font-family: 'OpenSansRegular', sans-serif;
   background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
-  height: 1320px;
+  height: 100%;
 }
 
 .articles_black{
@@ -745,11 +755,12 @@ h4{
 }
 
 .bar_responsive{
-    position: relative;
-  top: 2vh;
   font-size: 24px;
   display: none;
   float:right;
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
@@ -758,7 +769,7 @@ h4{
   background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
-  height: 1260px;
+  height: 100%;
 }
 
 .articles_staff{
@@ -810,11 +821,10 @@ h4{
   background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
-  height: 1120px;
+  height: 100%;
 }
-
 .evento_img{
-  width: 435px;
+  width: 100%;
 }
 
 .p_eventos{
@@ -953,7 +963,9 @@ h4{
 .logo_left img {
   height: 100%;
   width: auto;
-  cursor: 
+  cursor: pointer;
+  top: 0;
+  transform: initial;
 }
 
 .img_text{
@@ -980,6 +992,31 @@ h4{
 .menu,.menu_nav,.img_text,.tiny,.paging,.body_text{
   display: none;
 }
+
+#captcha{
+  width: 100%;
+}
+
+.contacto_c input, .contacto_c textarea{
+  width: 100%;
+}
+
+.contacto_c label{
+  display: none;
+}
+
+.contacto_e input, .contacto_e textarea{
+  width: 100%;
+}
+
+.contacto_e label{
+  display: none;
+}
+
+.contacto_col{
+  line-height: 12px;
+}
+
 
 .bar_responsive{
   display: block;
@@ -1020,6 +1057,17 @@ h4{
   display: none;
 }
 
+.contacto_c input, .contacto_c textarea{
+  width: 100%;
+}
+
+.contacto_col{
+  line-height: 12px;
+}
+
+.contacto_c label{
+  display: none;
+}
 
 
 .menu_cursos{
@@ -1048,6 +1096,14 @@ h4{
     margin: 4% auto;
 }
 
+.contacto_col{
+  line-height: 12px;
+}
+
+.contacto_c label{
+  display: none;
+}
+
 .contact_info{
   text-align: center;
 }
@@ -1067,7 +1123,6 @@ h4{
 
 }
 
-
-
-#marco{width:100%; height:100%; position:fixed; background-color: rgba(1, 1, 1, 0.4); top:0; left:0; z-index:1;}
-
+@media only screen and (min-width: 1680px){
+  .menu_nav{width: 72%;}
+}
