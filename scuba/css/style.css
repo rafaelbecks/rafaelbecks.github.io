@@ -883,6 +883,18 @@ h4{
   display: none;
 }
 
+.cursos_menu_responsive{
+    width: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+  display: none;
+}
+
+.cursos_menu_responsive .black{
+  font-family: 'OpenSansRegular';
+}
+
 /* RESPONSIVE */
 /*
 .side_panel{
@@ -943,10 +955,38 @@ h4{
   margin-left: 12px;
 }
 
-.info_form{display: none}
-.menu_cursos{
+.menu_cursos,.info_form{
     width: 100%;
   text-align: center;
+  float: none;
+}
+
+.menu_cursos{
+  display: none;
+}
+
+.contacto input,.contacto textarea{
+  width: 100%;
+}
+
+.body_text{
+  display: none;
+}
+
+.cursos{
+  height: 100%;
+}
+
+.contacto button {
+  position: relative;
+  right: 0;
+  float: none;
+}
+
+.contacto label{display: none;}
+
+.cursos_menu_responsive{
+  display: block;
 }
 
 }
@@ -956,16 +996,25 @@ h4{
   display: none;
 }
 
+
+
+button{float:none; right: 0;}
+
 .bar_responsive{
   display: block;
 }
 
-.logo_left img {
-  height: 100%;
-  width: auto;
-  cursor: pointer;
-  top: 0;
-  transform: initial;
+.logo_left img{
+  height:65%;
+  width: auto !important;
+  position: relative !important;
+top: 50% !important;
+transform: translateY(-50%) !important;
+
+}
+
+.article p{
+  text-align: center;
 }
 
 .img_text{
@@ -992,6 +1041,17 @@ h4{
 .menu,.menu_nav,.img_text,.tiny,.paging,.body_text{
   display: none;
 }
+
+.producto_tienda{
+    margin-bottom: 28px;
+}
+
+.main{
+  background: url("../img/responsive.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 
 #captcha{
   width: 100%;
@@ -1025,11 +1085,7 @@ h4{
   display: none;
 }
 
-.logo_left img {
-  height: 100%;
-  width: auto;
-  cursor: 
-}
+
 
 .read_more{
   float:none;
@@ -1053,7 +1109,7 @@ h4{
 }
 
 @media only screen and (max-width : 480px) {
-.img_text,.rif,.tiny,.txtleft,.paging,.info_form,.body_text{
+.img_text,.rif,.tiny,.txtleft,.paging,.body_text{
   display: none;
 }
 
@@ -1074,13 +1130,6 @@ h4{
     width: 100%;
   text-align: center;
 }
-.logo_left{
-    margin: 4% auto;
-}
-
-.logo_left img{
-  height:82%;
-}
 
 .img_text_aventura{
   margin-top: 35%;
@@ -1092,9 +1141,6 @@ h4{
 
 
 @media only screen and (max-width : 320px) {
-.logo_left{
-    margin: 4% auto;
-}
 
 .contacto_col{
   line-height: 12px;
@@ -1110,11 +1156,6 @@ h4{
 
 .contact_info p{
   text-align: center;
-}
-
-.logo_left img {
-  height: 70%;
-  width: auto;
 }
 
 .rif,.tiny,.txtleft{
