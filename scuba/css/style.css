@@ -84,7 +84,7 @@ header .content{
 
 .responsive_menu{
     display: none;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.85);
   text-align: center;
   position: fixed;
   width: 100vw;
@@ -1117,6 +1117,9 @@ transform: translateY(-50%) !important;
   width: 100%;
 }
 
+.content{
+    margin: 0px 6% auto;
+}
 .contacto_col{
   line-height: 12px;
 }
