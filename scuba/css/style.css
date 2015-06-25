@@ -27,12 +27,12 @@ h1,h2{
 
 h1{
     
-    font-size: 27px;
+    font-size: 36px;
     margin: 0;
 }
 
 h3{
-  font-size: 16px;
+  font-size: 24px;
   margin: 0;
   line-height: 22px;
 }
@@ -57,7 +57,7 @@ p{
 
 .main{
   color: #fff;
-  background: url("../img/banner1.jpg");
+  background: url("../img/bn_tortuga.jpg");
   height: 65vh;
   width: 100%;
   background-size: cover;
@@ -228,7 +228,7 @@ header .content{
     background: rgba(255,255,255,.3);
   border: none;
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 20px;
   width: 105px;
        transition: all 0.6s ease-in-out;
@@ -240,6 +240,23 @@ header .content{
 
 .btn_more:hover{
     background: rgba(255,255,255,.1);
+}
+
+.left{
+  float: left;
+  position: relative;
+  margin-top: 46vh;
+  text-align: center;
+  width: 18%;
+}
+
+.left span{
+  color:#fff;
+  font-size: 11px;
+}
+
+.left img{
+  width: 42%;
 }
 
 .info{
@@ -291,7 +308,7 @@ header .content{
   border: none;
   padding: 5px;
   color:#fff;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 20px;
   width: 105px;
        transition: all 0.6s ease-in-out;
@@ -996,7 +1013,19 @@ h4{
   display: none;
 }
 
+.info{
+  text-align: center;
+}
 
+.adventure{
+ background: url("../img/responsive_2.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+.content{
+    margin: 0px 3% auto;
+}
 
 button{float:none; right: 0;}
 
@@ -1042,6 +1071,15 @@ transform: translateY(-50%) !important;
   display: none;
 }
 
+.left{
+  display: none;
+}
+
+
+.img_text_aventura{
+  width: 100%;
+  margin-left: 0 !important;
+}
 .producto_tienda{
     margin-bottom: 28px;
 }
@@ -1106,6 +1144,7 @@ transform: translateY(-50%) !important;
   display: block;
 }
 
+
 }
 
 @media only screen and (max-width : 480px) {
@@ -1118,7 +1157,7 @@ transform: translateY(-50%) !important;
 }
 
 .content{
-    margin: 0px 6% auto;
+    margin: 0px 1% auto;
 }
 .contacto_col{
   line-height: 12px;
