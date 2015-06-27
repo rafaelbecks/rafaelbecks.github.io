@@ -1,16 +1,39 @@
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	  $('.content_cursos_pag').bxSlider({
+    mode: 'vertical',
+    minSlides: 4,
+    infiniteLoop:false,
+    slideMargin:10
+  });
+
+	  $("#arrow_down").click(function(){
+	  	$(".bx-next").trigger("click");
+	  });
+
+	  $("#arrow_up").click(function(){
+	  	$(".bx-prev").trigger("click");
+	  });
+
+
+});	
+</script>
+
+
 <section class="actividades view">
 	<section class="content">
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
 					<center><h1 class="black wow fadeInDown">CURSOS</h1></center>
-					<div class="row_content wow fadeIn">
+				<div class="row_content  content_cursos_pag wow fadeIn">
 					<article class="row">
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -18,9 +41,9 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb2.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Open Water Diver</h5>
+							<h5 class="black cursos_titulo">PADI Open Water Diver</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -28,9 +51,9 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb3.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -38,17 +61,55 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
-
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PRUEBA 1</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PRUEBA 2</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PRUEBA 3</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					</article>					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PRUEBA 4</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
 					</div>
 						<div class="paging">
-							<div class="arrow"><i class="ion-ios-arrow-up"></i></div>
-							<div class="arrow"><i class="ion-ios-arrow-down"></i></div>
+							<div class="arrow" id="arrow_up"><i class="ion-ios-arrow-up"></i></div>
+							<div class="arrow" id="arrow_down"><i class="ion-ios-arrow-down"></i></div>
 						</div>
 
 				</div>
@@ -59,9 +120,9 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -69,9 +130,9 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb2.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Open Water Diver</h5>
+							<h5 class="black cursos_titulo">PADI Open Water Diver</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -79,9 +140,9 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb3.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -89,9 +150,9 @@
 						<div class="col-md-5 col-sm-5"><img class="thumb"src="img/thumb1.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more no_float">ME ANOTO</button>
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
