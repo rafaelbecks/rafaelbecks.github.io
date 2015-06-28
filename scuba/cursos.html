@@ -1,5 +1,6 @@
 <script type="text/javascript">
 $(".left_menu ul li").click(function(){
+	$(".left_menu ul li").removeClass("active_menu");
 	$("#sub_"+this.id).slideToggle("medium");
 	$("#"+this.id).toggleClass("active_menu");
 	$("#sub_"+this.id).toggleClass("transparent");
@@ -81,4 +82,7 @@ $("#especialidades").trigger("click");
 			</section>
 		</div>
 	</section>
+		<div class="cleaner"></div>
+		<div ng-include src="'contact_info.html'" class="partial_info"></div>
 </section>	
+

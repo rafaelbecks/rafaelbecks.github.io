@@ -40,3 +40,11 @@ scuba_site.config(function ($stateProvider, $urlRouterProvider, $locationProvide
             })  
 
 });
+
+
+function validarEntero(e){
+    tecla = (document.all) ? e.keyCode : e.which;
+    patron =/[\d]/;
+    te = String.fromCharCode(tecla);
+    return patron.test(te);
+}

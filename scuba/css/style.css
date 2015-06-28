@@ -146,6 +146,10 @@ height: 14%;
   clear:both;
 }
 
+.partial_info{
+  margin-top:20px;
+}
+
 header .content{
   margin: 0 16% auto;
   height: 100%;
@@ -276,6 +280,8 @@ header .content{
   top: 50%;
   transform: translateY(-50%);
 }
+
+
 
 .input_buscar{
   border: 0;
@@ -452,7 +458,10 @@ font-family: 'OpenSansRegular', sans-serif !important;
   text-align: center;
 }
 .thumb{
-  width: 100%;
+  width: 157px;
+  position: relative;
+  top: 50%;
+  transform: translateY(17%);
 }
 
 .btn_anotar{
@@ -479,7 +488,7 @@ font-family: 'OpenSansRegular', sans-serif !important;
 
 .contact_info{
   padding: 3% 0 3% 0;
-  background: rgba(204,204,204,.8);
+  background: rgba(204,204,204,.7);
 }
 
 footer{
@@ -544,7 +553,7 @@ footer{
   background:url("../img/bg.jpg");
   background-size:cover;
   background-position: center;
-  height: 1200px;
+  height: 100%;
 }
 
 .body_text{
@@ -624,6 +633,7 @@ font-family: 'OpenSansRegular', sans-serif;
 
 .submenu{
   display: none;
+   border-bottom: 1px solid #fff;
 }
 
 .transparent{
@@ -856,6 +866,10 @@ font-family: 'OpenSansRegular', sans-serif;
   height: 100%;
 }
 
+.titulos_tienda{
+  font-size: 18px;
+}
+
 .articles_black{
   padding:20px;
   background: rgba(12, 105, 186, 0.7);
@@ -878,7 +892,7 @@ h4{
 }
 
 .contacto_p{
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .big_social{
@@ -976,13 +990,18 @@ h4{
   margin:20px auto;
 }
 
+.titulos24{
+  font-size: 24px;
+}
+
 .staff_left{
   line-height: 15px;
 }
 
 .p_staff{
   text-align: justify;
-  font-size: 11px;
+  font-size: 13px;
+  font-family: 'OpenSansLight' !important;
   list-style: none;
 }
 
@@ -1006,10 +1025,17 @@ h4{
 .name_staff{
   color: black;
   font-weight: bold;
-  font-size: 12px;
+  font-family: 'Eurostile' !important;
+  font-size: 14px;
+}
+
+.name_content{
+    margin-top: 5px;
 }
 
 .info_staff{
+  font-size: 12px;
+  font-family: 'OpenSansLight';
 }
 
 /*EVENTOS*/
@@ -1154,10 +1180,31 @@ h4{
 }
 */
 
+@media only screen and (min-width: 1227px){
+  ::-webkit-input-placeholder {
+  color: transparent;
+}
+  ::-moz-input-placeholder {
+  color: transparent;
+}
+::-ms-input-placeholder {
+  color: transparent;
+}
+
+::-o-input-placeholder {
+  color: transparent;
+}
+
+}
+
 @media only screen and (max-width : 1227px) {
 .menu_nav ul li {
   display: inline-block;
   margin-left: 12px;
+}
+
+.thumb{
+  width: 100%;
 }
 
 .menu_cursos,.info_form{
