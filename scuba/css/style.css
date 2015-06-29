@@ -142,6 +142,10 @@ height: 14%;
   z-index: 99;
 }
 
+.interlineado{
+    line-height: 30px !important;
+}
+
 .cleaner{
   clear:both;
 }
