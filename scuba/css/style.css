@@ -186,12 +186,13 @@ header .content{
 }
 
 .img_text{
+
   float: right;
   text-align: right;
   margin-top: 19%;
-  margin-right: 13%;
-
+  margin-right: 77px;
 }
+
 .logo_left{
   height: 100%;
   width: 20%;
