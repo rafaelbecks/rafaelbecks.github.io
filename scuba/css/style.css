@@ -1251,7 +1251,23 @@ h4{
   display: block;
 }
 
+.img_text {
+  float: right;
+  text-align: right;
+  margin-top: 29%;
+  margin-right: 77px;
 }
+
+.img_text h1{
+  font-size: 32px;
+}
+
+.img_text h3{
+  font-size:24px;
+}
+
+}
+
 
 @media only screen and (max-width : 990px) {
 .menu,.social,.menu_nav,.paging{
