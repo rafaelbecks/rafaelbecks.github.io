@@ -64,3 +64,28 @@ function detectmob() {
     return false;
   }
 }
+
+
+scuba_site.controller('cursosController', ['$scope', function($scope){
+    $scope.templates=
+    [ { name: 'discover.html', url: 'cursos/discover.html'},
+    {name: 'open_water.html', url: 'cursos/open_water.html'},
+    {name: 'advanced_open.html', url: 'cursos/advanced_open.html'},
+    {name: 'navegacion_sub.html', url: 'cursos/navegacion_sub.html'},
+    {name: 'buceo_profundo.html', url: 'cursos/buceo_profundo.html'},
+    {name: 'aire_enriquecido.html', url: 'cursos/aire_enriquecido.html'},
+    {name: 'naufragios.html', url: 'cursos/naufragios.html'},
+    {name: 'multinivel.html', url: 'cursos/multinivel.html'},
+    {name: 'corrientes.html', url: 'cursos/corrientes.html'},
+    {name: 'busqueda.html', url: 'cursos/busqueda.html'},
+    {name: 'nocturno.html', url: 'cursos/nocturno.html'},
+    {name: 'desde_bote.html', url: 'cursos/desde_bote.html'},
+    {name: 'rescue_diver.html', url: 'cursos/rescue_diver.html'}
+    ];
+    $scope.curso=function(curso,titulo){
+      $scope.template=$scope.templates[curso];
+      $scope.comentario=titulo;
+    }
+
+    
+}]);(window.angular);

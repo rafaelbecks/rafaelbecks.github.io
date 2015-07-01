@@ -35,36 +35,36 @@ $(".left_menu ul li").click(function(){
 
 		</center>	
 
-		<div class="main_content">
+		<div class="main_content" ng-controller="cursosController">
 			<div class="cursos_menu_responsive" onclick="$('.menu_cursos').slideToggle();">
 				<h3 class="black">VER TODOS LOS CURSOS</h3>
 			</div>
 			<aside class="menu_cursos">
 				<nav class="left_menu">
 					<ul>
-						<li id="discover">DISCOVER SCUBA DIVING</li>
-						<li id="open_water">OPEN WATER DIVER</li>
+						<li id="discover" class="active_menu" data-ng-init="curso(0,'DISCOVER SCUBA DIVING');" ng-click="click1();">DISCOVER SCUBA DIVING</li>
+						<li id="open_water" ng-click="curso(1,'OPEN WATER DIVER');">OPEN WATER DIVER</li>
 						<li id="reactive">RE ACTIVE (REFRESCAMIENTO)</li>
-						<li id="advanced">ADVANCED OPEN WATER</li>
+						<li id="advanced" ng-click="curso(2,'ADVANCED OPEN WATER');">ADVANCED OPEN WATER</li>
 						<li id="especialidades">ESPECIALIDADES</li>
 							<ul class="submenu" id="sub_especialidades">
-								<li> - Buceo desde Bote</li>
+								<li ng-click="curso(11,'Buceo desde Bote');"> - Buceo desde Bote</li>
 								<li> - Fotografia Digital Subacuática</li>
-								<li> - Buceo En Corrientes</li>
+								<li ng-click="curso(8,'Buceo En Corrientes');"> - Buceo En Corrientes</li>
 								<li> - Buceo Con Traje Seco</li>
 								<li> - Proveedor De Oxígeno</li>
-								<li> - Aire Enriquecido (Nitrox)</li>
+								<li ng-click="curso(5,'Aire Enriquecido (Nitrox)');"> - Aire Enriquecido (Nitrox)</li>
 								<li> - Especialista En Equipos</li>
-								<li> - Buceo Multinivel</li>
-								<li> - Buceo Nocturno</li>
+								<li ng-click="curso(7,'Buceo Multinivel');"> - Buceo Multinivel</li>
+								<li ng-click="curso(10,'Buceo Nocturno');"> - Buceo Nocturno</li>
 								<li> - Control De Flotabilida</li>
 								<li> - Sidemount (Montaje Lateral)</li>
-								<li> - Navegacion Subacuatica</li>
-								<li> - Buceo Profundo</li>
-								<li> - Buceo En Naufragios</li>
-								<li> - Busqueda Y Recuperacion</li>
+								<li ng-click="curso(3,'Navegacion Subacuatica');"> - Navegacion Subacuatica</li>
+								<li ng-click="curso(4,'Buceo Profundo');"> - Buceo Profundo</li>
+								<li ng-click="curso(6,'Buceo En Naufragios');"> - Buceo En Naufragios</li>
+								<li ng-click="curso(9,'Busqueda Y Recuperacion');"> - Busqueda Y Recuperacion</li>
 							</ul>
-						<li id="rescue">RESCUE DIVER</li>
+						<li id="rescue" ng-click="curso(12,'RESCUE DIVER');">RESCUE DIVER</li>
 						<li id="emergency">EMERGENCY FIRST RESPONSE</li>
 						<li id="cursos_niños">CURSOS PARA NIÑOS</li>
 							<ul class="submenu" id="sub_cursos_niños">
@@ -96,14 +96,7 @@ $(".left_menu ul li").click(function(){
 				</nav>
 			</aside>
 			<section class="info_form wow fadeIn">
-				<div class="top_section">
-					<h1 class="yellow opensans">BUCEO DESDE BOTE</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					
+				<div class="top_section slide-animate" ng-include="template.url">					
 				</div>
 				<div class="form">
 					<center><h3 class="yellow">CONTACTENOS <span class="whity">para mayor información</span></h3></center>
@@ -117,7 +110,7 @@ $(".left_menu ul li").click(function(){
 								<label>Email:</label>
 								<input type="email" required placeholder="Email"/></br></br>
 								<label class="lbltextarea">Comentario</label>
-								<textarea  rows="4" required placeholder="Comentario"></textarea></br></br>
+								<textarea  rows="4" ng-model="comentario" required placeholder="Comentario" id="#comentario"></textarea></br></br>
 								<!--label id="capt_lbl">Escriba los caracteres que ve en la imagen:</label-->
 								<center><div class="g-recaptcha" id="captcha_google1" data-sitekey="6LciHgkTAAAAAJyc-m_gH68lBbRkr9Y77JmzcSTj"></div></center>
 								<div class="cleaner"></div></br>
