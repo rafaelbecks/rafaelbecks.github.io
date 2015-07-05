@@ -87,15 +87,19 @@ scuba_site.controller('cursosController', ['$scope', function($scope){
       $scope.comentario=titulo;
     }
 
-    if(sessionStorage.curso!=undefined)
+    if(sessionStorage.curso!=undefined){
         $scope.curso(sessionStorage.curso,sessionStorage.titulo);   
+        $(".left_menu ul li").removeClass("active_menu");
+        $("#"+sessionStorage.id_curso).toggleClass("active_menu");
+    }
     else
         $scope.curso(1,"DISCOVER SCUBA DIVING");
 
-    $scope.href_curso=function(curso,titulo){
+    $scope.href_curso=function(curso,titulo,id){
         sessionStorage.curso=curso;
         sessionStorage.titulo=titulo;
-        window.location.href="http://localhost/scuba/#/cursos";
+        sessionStorage.id_curso=id;
+        window.location.href="#/cursos";
     }
     
 }]);(window.angular);

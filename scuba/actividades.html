@@ -36,7 +36,7 @@ $(document).ready(function(){
 </script>
 
 
-<section class="actividades view">
+<section class="actividades view" ng-controller="cursosController">
 	<section class="content">
 			<div class="row">
 				<div class="col-md-6 col-sm-6">
@@ -58,7 +58,7 @@ $(document).ready(function(){
 						<center>
 							<h5 class="black cursos_titulo">PADI Open Water Diver</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(2,'ADVANCED OPEN WATER','advanced');" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
