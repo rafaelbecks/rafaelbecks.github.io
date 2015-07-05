@@ -1,3 +1,23 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+	$("#contacto_e").submit(function(){
+		if(grecaptcha.getResponse() == ""){
+			  $(".mensaje_validacion_error").fadeIn();
+			  event.preventDefault();
+		}
+		else{
+		  $(".mensaje_validacion_error").fadeOut();
+			$(".mensaje_validacion").fadeIn();
+			$('#form_contacto_curso')[0].reset();
+		}
+	
+});
+
+	var mq = window.matchMedia( "(max-width: 767px)" );
+	if (mq.matches) {
+	$(".g-recaptcha").attr("data-size","compact");
+	}
+</script>
 <section class="eventos_v view">
 	<section class="content">
 		<center>
@@ -14,24 +34,25 @@
 					<img src="img/evento.jpg" class="evento_img">
 				</div>
 				<div class="col-md-6 sm-12">
-					<p class="p_eventos"><span class="yellow">Lugar: </span>Caracas, C.C. Macaracuay / 21 de Abril de 2015</p>
-					<p class="p_eventos"><span class="yellow">Hora: </span>10:00am a 11:30am</p>
-					<p class="p_eventos"><span class="yellow">Descripci&oacute;n: </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					<p class="p_eventos"><span class="yellow evt_span">Lugar: </span>Caracas, C.C. Macaracuay / 21 de Abril de 2015</p>
+					<p class="p_eventos"><span class="yellow evt_span">Hora: </span>10:00am a 11:30am</p>
+					<p class="p_eventos"><span class="yellow evt_span">Descripci&oacute;n: </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div class="col-md-12 sm-12">
+					<hr>
 					<br></br>
-					<center><h1><span class="yellow">CONTACTENOS</span> para mayor informaci&oacute;n</h1></center>
+					<center><h1 id="contac_eventos"><span class="yellow">CONTACTENOS</span> <span class="euro">para mayor informaci&oacute;n</span></h1></center>
 					<br>
 				</div>
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
-					<form class="contacto_e">
+					<form class="contacto_e" id="contacto_e" name="contacto_e">
 							<center>
-								<label>Nombre y Apellido</label>
+								<label>Nombre y Apellido:</label>
 								<input type="text" placeholder="Nombre y Apellido"/></br></br>
 								<label>Teléfono:</label>
 								<input type="text" placeholder="Teléfono"/></br></br>
@@ -39,9 +60,15 @@
 								<input type="text" placeholder="Email"/></br></br>
 								<label class="lbltextarea">Comentario</label>
 								<textarea placeholder="Buceo desde bote" rows="4"></textarea></br>
-								<label>Escriba los caracteres que ve en la imagen</label>
-								<input type="text" placeholder="Captcha"/></br></br>
-								<button class="read_more_e enviar">ENVIAR</button>
+								<center><div class="g-recaptcha" id="captcha_google1" data-sitekey="6LciHgkTAAAAAJyc-m_gH68lBbRkr9Y77JmzcSTj"></div></center>
+								<div class="cleaner"></div></br>
+								<p class="yellow mensaje_validacion_error">El captcha es obligatorio</p>
+								<!--input type="text" id="captcha" required placeholder="Captcha"/></br></br-->
+								<div class="cleaner"></div>
+								<button type="submit" id="submit_form_contacto_c" class="read_more enviar">ENVIAR</button>
+								<div class="cleaner"></div>
+								</br>
+								<p class="yellow mensaje_validacion"> Su mensaje ha sido enviado con éxito. Lo estaremos contactando en la brevedad posible</p>
 							</center>
 					</form>
 				</div>

@@ -1,11 +1,22 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script type="text/javascript">
-$(".left_menu ul li").click(function(){
-	$(".left_menu ul li").removeClass("active_menu");
-	$("#sub_"+this.id).slideToggle("medium");
-	$("#"+this.id).toggleClass("active_menu");
-	$("#sub_"+this.id).toggleClass("transparent");
-	$('#form_contacto_curso')[0].reset();
+
+$(".left_menu > ul > li").click(function(){
+	if($("#sub_"+this.id).css("display")=="block"){
+	$("#sub_"+this.id).slideUp();
+	}else{
+		if($("#"+this.id).attr("class")!="has_submenu"){
+			$(".has_submenu + ul").slideUp();				
+		}
+		$(".left_menu ul li").removeClass("active_menu");
+		if($("#sub_"+this.id).css("display")=="none"){
+			$(".has_submenu + ul").slideUp();		
+		}
+		$("#sub_"+this.id).slideToggle("medium");
+		$("#"+this.id).toggleClass("active_menu");
+		$("#sub_"+this.id).toggleClass("transparent");
+		$('#form_contacto_curso')[0].reset();		
+}
 });
 	$("#form_contacto_curso").submit(function(){
 		if(grecaptcha.getResponse() == ""){
@@ -15,6 +26,7 @@ $(".left_menu ul li").click(function(){
 		else{
 		  $(".mensaje_validacion_error").fadeOut();
 			$(".mensaje_validacion").fadeIn();
+			$('#form_contacto_curso')[0].reset();
 		}
 	
 });
@@ -31,7 +43,7 @@ $(".left_menu ul li").click(function(){
 		<center class="texto_principal">
 				<h1 class="black wow fadeInDown">CURSOS</h1>
 				<div class="triangle"></div>
-	<p class="black body_text wow fadeIn" style="visibility: visible;background: rgba(12, 105, 186, 0.7);   color: #fff;padding: 17px;width: 98%;position: relative;left: -3%;">Si estás interesado en experimentar todas las cosas nuevas que te ofrece el increible mundo submarino, en SCUBATEC DIVE CENTER te ofrecemos todos los cursos, desde las primeras experiencias, pasando por cursos iniciales hasta las especializaciones sin dejar de lado el fascinante mundo del buceo Técnico. Y si crees que esta era la profesión que estabas buscando también te podemos ayudar... Ven a vivir la experiencia más impresionante de tu vida. El buen entrenamiento de una actividad como esta comienza en un salón de clase, nosotros en SCUBATEC tenemos toda la infraestructura necesaria para lograr que cumplas todos los objetivos requeridos en cada uno de los niveles de entrenamiento </p>
+	<p class="black body_text wow fadeIn triang_curso">Si estás interesado en experimentar todas las cosas nuevas que te ofrece el increible mundo submarino, en SCUBATEC DIVE CENTER te ofrecemos todos los cursos, desde las primeras experiencias, pasando por cursos iniciales hasta las especializaciones sin dejar de lado el fascinante mundo del buceo Técnico. Y si crees que esta era la profesión que estabas buscando también te podemos ayudar... Ven a vivir la experiencia más impresionante de tu vida. El buen entrenamiento de una actividad como esta comienza en un salón de clase, nosotros en SCUBATEC tenemos toda la infraestructura necesaria para lograr que cumplas todos los objetivos requeridos en cada uno de los niveles de entrenamiento </p>
 
 		</center>	
 
@@ -41,12 +53,12 @@ $(".left_menu ul li").click(function(){
 			</div>
 			<aside class="menu_cursos">
 				<nav class="left_menu">
-					<ul>
-						<li id="discover" class="active_menu" data-ng-init="curso(0,'DISCOVER SCUBA DIVING');" ng-click="curso(0,'DISCOVER SCUBA DIVING');">DISCOVER SCUBA DIVING</li>
+					<ul class="main_list">
+						<li id="discover" class="active_menu" ng-click="curso(0,'DISCOVER SCUBA DIVING');">DISCOVER SCUBA DIVING</li>
 						<li id="open_water" ng-click="curso(1,'OPEN WATER DIVER');">OPEN WATER DIVER</li>
 						<li id="reactive">RE ACTIVE (REFRESCAMIENTO)</li>
 						<li id="advanced" ng-click="curso(2,'ADVANCED OPEN WATER');">ADVANCED OPEN WATER</li>
-						<li id="especialidades">ESPECIALIDADES</li>
+						<li id="especialidades" class="has_submenu">ESPECIALIDADES</li>
 							<ul class="submenu" id="sub_especialidades">
 								<li ng-click="curso(11,'Buceo desde Bote');"> - Buceo desde Bote</li>
 								<li> - Fotografia Digital Subacuática</li>
@@ -66,12 +78,12 @@ $(".left_menu ul li").click(function(){
 							</ul>
 						<li id="rescue" ng-click="curso(12,'RESCUE DIVER');">RESCUE DIVER</li>
 						<li id="emergency">EMERGENCY FIRST RESPONSE</li>
-						<li id="cursos_niños">CURSOS PARA NIÑOS</li>
+						<li id="cursos_niños" class="has_submenu">CURSOS PARA NIÑOS</li>
 							<ul class="submenu" id="sub_cursos_niños">
 								<li>- Bubblemaker</li>
 								<li>- PADI Seal Team</li>
 							</ul>
-						<li id="cursos_profesionales">CURSOS PROFESIONALES</li>
+						<li id="cursos_profesionales" class="has_submenu">CURSOS PROFESIONALES</li>
 							<ul class="submenu" id="sub_cursos_profesionales">
 								<li> - Divemaster</li>
 								<li> - Asistente Instructor</li>
@@ -81,7 +93,7 @@ $(".left_menu ul li").click(function(){
 								<li> - IDC Staff Instructor</li>
 								<li> - EFR Instructor</li>
 							</ul>
-						<li id="cursos_tecnicos" class="last">CURSOS BUCEO TÉCNICO</li>
+						<li id="cursos_tecnicos" class="last has_submenu">CURSOS BUCEO TÉCNICO</li>
 							<ul class="submenu last" id="sub_cursos_tecnicos">
 								<li> - Discover Tec Diving </li>
 								<li> - Tec 40 </li>
@@ -103,7 +115,7 @@ $(".left_menu ul li").click(function(){
 					
 					<form class="contacto" name="form_contacto_curso" id="form_contacto_curso">
 							<center>
-								<label>Nombre y Apellido</label>
+								<label>Nombre y Apellido:</label>
 								<input type="text" required placeholder="Nombre y Apellido"/></br></br>
 								<label>Teléfono:</label>
 								<input type="tel" required onkeypress="return validarEntero(event);" placeholder="Teléfono" /></br></br>

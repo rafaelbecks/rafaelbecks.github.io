@@ -337,6 +337,17 @@ header .content{
   -o-transition: all 0.6s ease-in-out;
 }
 
+
+.triang_curso{
+  visibility: visible;
+  background: rgba(12, 105, 186, 0.7);   
+  color: #fff !important;
+  padding: 17px;
+  width: 98%;
+  position: relative;
+  left: -3%;
+}
+
 .btn_more:hover{
     background: rgba(255,255,255,.1);
 }
@@ -440,6 +451,10 @@ font-family: 'OpenSansRegular', sans-serif !important;
 
 .black{
   color:#000;
+}
+
+.h_vid{
+  margin-top:0px;
 }
 
 .info_sec{
@@ -1130,12 +1145,24 @@ h4{
 
 .p_eventos{
   font-size: 11px;
-  line-height: 15px;
+  line-height: 18px;
   text-align: justify;
+}
+
+#contac_eventos{
+  font-size: 24px;
+}
+
+.euro{
+  font-family: 'Eurostile' !important;
 }
 
 .p_eventos span{
   font-weight: bold;
+}
+
+.evt_span{
+  font-size: 12px;
 }
 
 .evento_buttons{
@@ -1419,12 +1446,11 @@ transform: translateY(-50%) !important;
 
 #captcha_google1,#captcha_google2{
  text-align: center;
-  float: none;
+  float: right;
   position: relative;
   left: 0;
-  margin-bottom: 41px;
-  top: 9px;
 }
+
 
 
 .left{
@@ -1500,11 +1526,18 @@ transform: translateY(-50%) !important;
   display: block;
 }
 
+.enterate{
+  display: none;
+}
 
 }
 
 @media only screen and (max-width : 480px) {
 .img_text,.rif,.tiny,.txtleft,.paging,.body_text{
+  display: none;
+}
+
+.enterate{
   display: none;
 }
 

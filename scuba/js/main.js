@@ -12,23 +12,23 @@ scuba_site.config(function ($stateProvider, $urlRouterProvider, $locationProvide
                 templateUrl : 'home.html'
             })
             .state('cursos',{
-            	url: '/cursos',
-            	templateUrl: 'cursos.html'
+                url: '/cursos',
+                templateUrl: 'cursos.html'
             })
 
             .state('actividades',{
-            	url: '/actividades',
-            	templateUrl: 'actividades.html'
+                url: '/actividades',
+                templateUrl: 'actividades.html'
             })
 
             .state('tienda',{
-            	url: '/tienda',
-            	templateUrl: 'tienda.html'
+                url: '/tienda',
+                templateUrl: 'tienda.html'
             })
 
             .state('contacto',{
-            	url: '/contacto',
-            	templateUrl: 'contacto.html'
+                url: '/contacto',
+                templateUrl: 'contacto.html'
             })
             .state('staff',{
                 url: '/staff',
@@ -65,8 +65,8 @@ function detectmob() {
   }
 }
 
-
 scuba_site.controller('cursosController', ['$scope', function($scope){
+
     $scope.templates=
     [ { name: 'discover.html', url: 'cursos/discover.html'},
     {name: 'open_water.html', url: 'cursos/open_water.html'},
@@ -87,5 +87,15 @@ scuba_site.controller('cursosController', ['$scope', function($scope){
       $scope.comentario=titulo;
     }
 
+    if(sessionStorage.curso!=undefined)
+        $scope.curso(sessionStorage.curso,sessionStorage.titulo);   
+    else
+        $scope.curso(1,"DISCOVER SCUBA DIVING");
+
+    $scope.href_curso=function(curso,titulo){
+        sessionStorage.curso=curso;
+        sessionStorage.titulo=titulo;
+        window.location.href="http://localhost/scuba/#/cursos";
+    }
     
 }]);(window.angular);
