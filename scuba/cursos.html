@@ -17,8 +17,17 @@ $(".left_menu > ul > li").click(function(){
 		$("#"+this.id).toggleClass("active_menu");
 		$("#sub_"+this.id).toggleClass("transparent");
 		$('#form_contacto_curso')[0].reset();		
+	if($(".cursos_menu_responsive").css("display")=="block" && $("#"+this.id).attr("class")!="has_submenu active_menu"){
+			$(".menu_cursos").slideUp();
+		}
 }
 });
+
+$(".submenu > li").click(function(){
+	if($(".cursos_menu_responsive").css("display")=="block")
+		$(".menu_cursos").slideUp();		
+});
+
 	$("#form_contacto_curso").submit(function(){
 		if(grecaptcha.getResponse() == ""){
 			  $(".mensaje_validacion_error").fadeIn();
@@ -31,11 +40,6 @@ $(".left_menu > ul > li").click(function(){
 		}
 	
 });
-
-	var mq = window.matchMedia( "(max-width: 767px)" );
-	if (mq.matches) {
-	$(".g-recaptcha").attr("data-size","compact");
-	}
 
 </script>
 

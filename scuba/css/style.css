@@ -183,7 +183,7 @@ header .content{
   background: rgba(0,0,0,.85);
   text-align: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
 }
 
 .responsive_menu ul{
@@ -1251,58 +1251,6 @@ float: right;
   width: 38%;
 }
 /* RESPONSIVE */
-/*
-.side_panel{
-  background-color: #222;
-  color: #fff;
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 2;
-  text-align: left;
-  position: fixed;
-  z-index: 99;
-  width: 20vw;
-  top: 0;
-  right: -20vw;
-  height: 100vh;
-    transition: right 0.3s ease-in-out;
-  -webkit-transition: right 0.3s ease-in-out;
-  -ms-transition: right 0.3s ease-in-out;
-  -moz-transition: right 0.3s ease-in-out;
-  -o-transition: right 0.3s ease-in-out;
-}
-
-.open_panel{
-  right:0vw;
-  height: 100vh;
-}
-
-.side_panel ul{
-    list-style: none;
-  padding: 22px;
-  margin: 0 21% auto;
-}
-
-.side_panel ul li{
-  color:#fff;
-  font-size: 15px;
-}
-
-.open{
-  position: relative;
-    right: 20vw;
-    height: 100vh;
-}
-
-.all{
-  position: relative;
-      transition: right 0.3s ease-in-out;
-  -webkit-transition: right 0.3s ease-in-out;
-  -ms-transition: right 0.3s ease-in-out;
-  -moz-transition: right 0.3s ease-in-out;
-  -o-transition: right 0.3s ease-in-out;
-}
-*/
 
 @media only screen and (min-width: 1227px){
   ::-webkit-input-placeholder {
@@ -1509,9 +1457,34 @@ transform: translateY(-50%) !important;
 }
 
 @media only screen and (max-width : 767px) {
-.menu,.menu_nav,.img_text,.tiny,.paging,.body_text{
+.menu,.menu_nav,.tiny,.paging,.body_text{
   display: none;
 }
+
+.producto_tienda{
+  margin-bottom: 30px
+}
+
+.lista_productos{
+  margin-bottom: 0;
+}
+
+.img_text{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 48vh;
+}
+
+.img_text h1{
+    font-size: 22px;
+}
+
+.img_text button{
+  margin-top: 2vh;
+  font-size: 12px;
+}
+
 .mobile_icons p{
   text-align: center;
 }
@@ -1549,7 +1522,7 @@ transform: translateY(-50%) !important;
 }
 
 .thumb{
-  width:36%;
+  width: 60%;
 }
 
 .text_eventos_prox{
@@ -1642,8 +1615,24 @@ transform: translateY(-50%) !important;
 }
 
 @media only screen and (max-width : 480px) {
-.img_text,.rif,.tiny,.txtleft,.paging,.body_text{
+.rif,.tiny,.txtleft,.paging,.body_text{
   display: none;
+}
+
+.img_text{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 48vh;
+}
+
+.img_text h1{
+    font-size: 22px;
+}
+
+.img_text button{
+  margin-top: 2vh;
+  font-size: 12px;
 }
 
 .enterate{
