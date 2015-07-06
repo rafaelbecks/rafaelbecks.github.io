@@ -27,37 +27,27 @@
 	 <script src="js/angular-ui-router.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/smooth.js"></script>
+	<script src="js/outside.min.js"></script>
+
 </head>
 
 <body>
 <script>
  new WOW().init();
-/*var openned=0;
-
- function openPanel(){
-	$("body").scrollTop(0);
-	if(openned==0){
-		$(".all").animate({
-			right:"20vw"
-		},3);	
-		openned=1;	
-		$(".items_panel").show();
-	}else{
-		$(".all").animate({
-			right:"0vw"
-		},3);	
-		openned=0;
-		$(".items_panel").hide();
-	}
-
-	$(".side_panel").toggleClass("open_panel");
-	$("body").toggleClass("body_fixed");
-}*/
+var click_from_menu=0;
 
 $(document).ready(function(){
 	$(".responsive_menu ul li").click(function(){
 		$(".responsive_menu").slideToggle();
 	})
+
+	$("#responsive_menu").bind( "clickoutside", function(event){
+		//alert($(".responsive_menu").css("display"));
+		if(click_from_menu==0)
+			$(".responsive_menu").slideUp();
+		else
+			click_from_menu=0;
+	});
 });
 </script>
 		<!--	<div class="side_panel">
@@ -74,7 +64,7 @@ $(document).ready(function(){
 -->
 		<header>
 	<div class="content">
-			<div class="logo_left">
+			<div class="logo_left" onclick="$('.responsive_menu').slideUp();">
 				<img ui-sref="main" src="img/logo.png">
 			</div>
 
@@ -93,7 +83,7 @@ $(document).ready(function(){
 					</li>
 				</ul>			
 
-				<i class="ion-navicon-round bar_responsive" onclick="$('.responsive_menu').slideToggle();"></i>
+				<i id="responsive_button" class="ion-navicon-round bar_responsive" onclick="$('.responsive_menu').slideToggle(); click_from_menu=1;"></i>
 
 				<nav class="menu">
 					<ul>
@@ -115,7 +105,7 @@ $(document).ready(function(){
 	</div>
 	
 
-		<div class="responsive_menu">
+		<div class="responsive_menu" id="responsive_menu">
 					<ul>
 						<li ui-sref-active="active_mod" ui-sref="cursos">CURSOS</li>
 						<li ui-sref-active="active_mod" ui-sref="actividades">ACTIVIDADES</li>
