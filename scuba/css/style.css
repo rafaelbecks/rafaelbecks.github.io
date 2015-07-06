@@ -1062,6 +1062,11 @@ h4{
   width: 100%;
 }
 
+
+.contacto_e input, .contacto_e textarea{
+  color:#000 !important;
+}
+
 .bar_responsive{
   font-size: 24px;
   display: none;
@@ -1197,6 +1202,7 @@ h4{
 .contacto_e input, .contacto_e textarea{
     padding: 7px;
   border-radius: 5px;
+  color:#000;
   border: none;
   width: 270px;
   -moz-box-shadow: inset 0 0 2px #000000;
@@ -1330,10 +1336,11 @@ display:none;
   display: none;
 }
 
-
-#submit_form_contacto_c{
-  float: none !important;
+#submit_form_contacto_c {
+float: right !important;
+left: 0px;
 }
+
 .contacto_c input, .contacto_c textarea{
   width: 100%;
 }
