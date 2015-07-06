@@ -93,7 +93,7 @@ scuba_site.controller('cursosController', ['$scope', function($scope){
         $("#"+sessionStorage.id_curso).toggleClass("active_menu");
     }
     else
-        $scope.curso(1,"DISCOVER SCUBA DIVING");
+        $scope.curso(0,"DISCOVER SCUBA DIVING");
 
     $scope.href_curso=function(curso,titulo,id){
         sessionStorage.curso=curso;

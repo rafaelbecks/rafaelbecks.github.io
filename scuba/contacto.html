@@ -2,12 +2,13 @@
 <script type="text/javascript">
 	$("#form_contacto_c").submit(function(){
 		if(grecaptcha.getResponse() == ""){
-			  $(".mensaje_validacion_error").fadeIn();
+			  $(".mensaje_validacion_error_contacto").fadeIn();
 			  event.preventDefault();
 		}
 		else{
-	    	  $(".mensaje_validacion_error").fadeOut();
-			$(".mensaje_validacion").fadeIn();
+	    	  $(".mensaje_validacion_error_contacto").fadeOut();
+			$(".mensaje_validacion_contacto").fadeIn();
+			$('#form_contacto_c')[0].reset();
 		}
 });
 

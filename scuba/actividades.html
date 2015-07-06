@@ -48,7 +48,7 @@ $(document).ready(function(){
 						<center>
 							<h5 class="black cursos_titulo">Discover Scuba Diving</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(0,'DISCOVER SCUBA DIVING','discover');" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -58,7 +58,7 @@ $(document).ready(function(){
 						<center>
 							<h5 class="black cursos_titulo">Open Water Diving</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ng-click="href_curso(2,'ADVANCED OPEN WATER','advanced');" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(1,'OPEN WATER DIVER','open_water');" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -78,7 +78,7 @@ $(document).ready(function(){
 						<center>
 							<h5 class="black cursos_titulo">Rescue Diver (Rescate)</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(12,'RESCUE DIVER','rescue');" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -86,9 +86,9 @@ $(document).ready(function(){
 						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black cursos_titulo">PRUEBA</h5>
+							<h5 class="black cursos_titulo">Buceo desde bote</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(11,'Buceo desde Bote','especialidades')" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -108,7 +108,7 @@ $(document).ready(function(){
 						<center>
 							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(4,'Buceo Profundo','especialidades');" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -116,9 +116,9 @@ $(document).ready(function(){
 						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb2.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black cursos_titulo">PADI Open Water Diver</h5>
+							<h5 class="black cursos_titulo">Buceo en corrientes</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(8,'Buceo En Corrientes','especialidades')" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -126,9 +126,9 @@ $(document).ready(function(){
 						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">Aire enriquecido (NITROX)</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(5,'Aire Enriquecido (Nitrox)','especialidades')" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -136,9 +136,9 @@ $(document).ready(function(){
 						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<h5 class="black cursos_titulo">Buceo multi-nivel</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(7,'Buceo Multinivel','especialidades')" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>
@@ -146,9 +146,9 @@ $(document).ready(function(){
 						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
 						<div class="col-md-7 col-sm-7">
 						<center>
-							<h5 class="black cursos_titulo">PRUEBA</h5>
+							<h5 class="black cursos_titulo">Buceo nocturno</h5>
 							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
-							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+							<button ng-click="href_curso(10,'Buceo Nocturno','especialidades')" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
 						</center>
 						</div>	
 					</article>

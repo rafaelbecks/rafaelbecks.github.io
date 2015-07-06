@@ -1247,6 +1247,9 @@ float: right;
   font-family: 'OpenSansLight' !important;
 }
 
+#center_event{
+  width: 38%;
+}
 /* RESPONSIVE */
 /*
 .side_panel{
@@ -1320,12 +1323,38 @@ footer .tiny{
   font-size: 12px;
 }
 
+#center_event{
+  width: 38%;
+  padding-left: 11%;
+}
+
 }
 
 @media only screen and (max-width : 1227px) {
 .menu_nav ul li {
   display: inline-block;
   margin-left: 12px;
+}
+
+#captcha_google1,#captcha_google2{
+ text-align: center;
+  float: right;
+  position: relative;
+  left: 0;
+}
+
+#center_event{
+  width: 38%;
+}
+
+#captcha_google3{
+  text-align: center;
+  position: relative;
+  left: 0; 
+}
+
+#submit_form_contacto_e{
+  left: 0;
 }
 
 .contacto_e label{
@@ -1485,6 +1514,11 @@ transform: translateY(-50%) !important;
 }
 .mobile_icons p{
   text-align: center;
+}
+
+#center_event {
+  width: 100%;
+  float: right;
 }
 
 .txtright{
