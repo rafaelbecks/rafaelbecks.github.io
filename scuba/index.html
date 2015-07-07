@@ -47,6 +47,14 @@
                     property: 'margin-top',
                     reference: 'vh'
                 },
+                '.vwmr':{
+                	property:'margin-right',
+                	reference :'vw'
+                },
+                '.vwml':{
+                	property:'margin-left',
+                	reference :'vw'                	
+                },
                 '.vh_padding':{
                 	property : 'padding',
                 	reference: 'vh'
@@ -95,10 +103,11 @@ $(document).ready(function(){
 			</div>	
 <div class="all">
 -->
-		<header>
+		<header class="vunit vh14">
 	<div class="content">
 			<div class="logo_left" onclick="$('.responsive_menu').slideUp();">
-				<img ui-sref="main" src="img/logo.png">
+				<img ui-sref="main" class="hidden-ms" src="img/logo.png">
+				<img ui-sref="main" class="visible-ms" style="height:100%;" src="img/logo.png">
 			</div>
 
 			<div class="right vunit vh_padding2">
