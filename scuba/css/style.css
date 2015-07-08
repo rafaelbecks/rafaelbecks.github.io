@@ -1738,7 +1738,7 @@ transform: translateY(-50%) !important;
 }
 
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 362px) {
 
 .contacto_col{
   line-height: 12px;
@@ -1760,7 +1760,25 @@ transform: translateY(-50%) !important;
   display: none;
 }
 
+.big_social{
+  color: rgb(38, 123, 195);
+  background: #fff;
+  font-size: 47px;
+  width: 66px;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
 }
+
+.social_text{
+  font-size: 11px;
+}
+}
+
 
 @media only screen and (min-width: 1680px){
   .menu_nav{width: 72%;}
