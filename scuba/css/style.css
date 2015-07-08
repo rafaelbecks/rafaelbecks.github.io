@@ -227,6 +227,9 @@ header .content{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 .menu{
@@ -304,6 +307,9 @@ header .content{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 
@@ -515,6 +521,9 @@ font-family: 'OpenSansRegular', sans-serif !important;
   position: relative;
   top: 50%;
   transform: translateY(17%);
+  -webkit-transform: translateY(17%);
+  -moz-transform: translateY(17%);
+  -ms-transform: translateY(17%);
 }
 
 .btn_anotar{
@@ -572,6 +581,9 @@ footer{
     position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 .social li a{
@@ -626,6 +638,30 @@ footer{
   font-family: 'Eurostile' !important;
   font-size: 21px;
 }
+
+.right_align{
+    text-align: right !important;
+}
+
+.landscape_banner2{
+  text-align: left !important;
+  margin-left: 11vw !important;
+  margin-top: 28vh;
+}
+
+.landscape_banner2 h1{
+  font-size: 17px;
+}
+
+.landscape_banner2 h3{
+    font-size: 15px;
+}
+
+.landscape_banner2 button{
+  font-size: 12px;
+  margin-top: 0;
+}
+
 
 
 .cursos{
@@ -918,6 +954,9 @@ font-family: 'OpenSansRegular', sans-serif;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   width: 140px;
   height: 140px;
   padding: 14px;
@@ -928,6 +967,9 @@ font-family: 'OpenSansRegular', sans-serif;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 .lista_productos{
@@ -1075,6 +1117,9 @@ h4{
     position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 
@@ -1436,6 +1481,9 @@ button{float:none; right: 0;}
   position: relative !important;
 top: 50% !important;
 transform: translateY(-50%) !important;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
 
 }
 
@@ -1457,7 +1505,7 @@ transform: translateY(-50%) !important;
 }
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 768px) {
 .menu,.menu_nav,.tiny,.body_text{
   display: none;
 }
@@ -1565,7 +1613,7 @@ transform: translateY(-50%) !important;
 
 .img_text_aventura{
   width: 100%;
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 
 
@@ -1609,28 +1657,6 @@ transform: translateY(-50%) !important;
   display: none;
 }
 
-.left_align{
-    text-align: left;
-}
-
-.landscape_banner2{
-  text-align: left !important;
-  margin-left: 11vw !important;
-  margin-top: 28vh;
-}
-
-.landscape_banner2 h1{
-  font-size: 17px;
-}
-
-.landscape_banner2 h3{
-    font-size: 15px;
-}
-
-.landscape_banner2 button{
-  font-size: 12px;
-  margin-top: 0;
-}
 
 
 
@@ -1748,6 +1774,9 @@ transform: translateY(-50%) !important;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   width: 180px;
   height: 180px;
   padding: 18px;
