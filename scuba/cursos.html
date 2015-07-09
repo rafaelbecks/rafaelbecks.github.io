@@ -41,6 +41,16 @@ $(".submenu > li").click(function(){
 	
 });
 
+var mq = window.matchMedia( "(max-width: 362px)" );
+
+if (mq.matches) {
+$(".g-recaptcha").attr("data-size","compact");
+}
+else {
+	// window width is less than 362px
+}	
+
+
 </script>
 
 <section class="cursos view vunit vh_padding_top22">

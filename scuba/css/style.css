@@ -1225,6 +1225,7 @@ h4{
   margin-top: 40px;
 }
 
+
 .read_more_e{
     float: right;
   border: 0;
@@ -1505,10 +1506,11 @@ transform: translateY(-50%) !important;
 }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 .menu,.menu_nav,.tiny,.body_text{
   display: none;
 }
+
 
 
 .img_text_aventura h1{
@@ -1803,7 +1805,7 @@ transform: translateY(-50%) !important;
 
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 766px) {
 .hidden-ms{
   display: none;
 }
@@ -1811,6 +1813,18 @@ transform: translateY(-50%) !important;
 .not_landscape{
   display: none !important;
 }
+
+}
+
+@media (min-width: 480px) and (max-width: 766px) {
+
+.main{
+  background: url("../img/responsive.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
 }
 
 @media (max-width: 480px){
@@ -1819,9 +1833,15 @@ transform: translateY(-50%) !important;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 766px){
   .visible-ms{
     display: none;
   }
+
+  .ABC{
+  position: relative !important;
+  right: 37px !important;    
+  }
+
 }
 

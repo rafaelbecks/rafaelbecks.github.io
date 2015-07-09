@@ -11,6 +11,15 @@
 			$('#contacto_e')[0].reset();
 		}
 	
+var mq = window.matchMedia( "(max-width: 362px)" );
+
+if (mq.matches) {
+$(".g-recaptcha").attr("data-size","compact");
+}
+else {
+	// window width is less than 362px
+}	
+
 });
 </script>
 <section class="eventos_v view vunit vh_padding_top22">
