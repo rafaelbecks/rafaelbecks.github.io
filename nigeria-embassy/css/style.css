@@ -1,0 +1,256 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Times New Roman';
+}
+
+.main_container{
+    margin: 3% 14%;
+}
+
+.logo img{
+  width: 82%;
+  position: relative;
+  bottom: 17px;
+  left: 21px;
+  cursor: pointer;
+}
+
+h1{
+  font-size: 28px;
+}
+
+h1,h2{
+    margin-top: 10px;
+	color: #008d36;
+}
+
+.main_title{
+	  position: relative;
+	  top: 18px;
+}
+
+nav{
+	margin-top:32px;
+}
+
+nav .menu li{
+   display: inline-block;
+  text-transform: uppercase;
+  margin-right: 66px;
+  font-size: 16px;
+}
+
+.last{
+	  margin-right: 0px !important;
+}
+
+nav .menu li a{
+	text-decoration: none;
+	color: #000;
+}
+
+nav .menu li a:hover{
+	color: #008d36;
+}
+
+.search_field{
+  display: inline-block;
+  float: right;
+  position: relative;
+  left: 23px;
+}
+
+.search_field input{
+	  padding: 4px;
+	  border: 1px solid #000;
+}
+
+.search_field span{
+  font-size: 20px;
+  position: relative;
+  padding: 3px;
+  right: 28px;
+  top: 3px;
+}
+
+.header_info{
+  text-align: right;
+}
+
+.header_info h4{
+	  display: inline-block;
+	  font-weight: 500;
+}
+
+.tiny{
+	font-size: 12px;
+	font-family: 'Helvetica'
+}
+
+.hour{
+  position: relative;
+  bottom: 11px;
+  color: #808080;
+}
+
+.green{
+	color: #008d36;
+}
+
+.slide,.embass{
+	width: 100%;
+}
+
+.main{
+	margin-top: 27px;
+}
+
+.name_embass{
+	  font-family: 'Helvetica';
+	  font-size: 17px;
+	  line-height: 0;
+}
+
+.black{
+	  margin-top: 20px;
+}
+
+.categories img{
+	width: 100%;
+}
+
+.green_title{
+  background: #008d36;
+  border-right: 1px solid #fff;
+}
+
+.big_title{
+	  height: 65px;
+}
+
+.white{
+  color: #fff !important;
+  font-size: 21px;
+}
+
+.titles_cat{
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  margin-top: 12px;
+	  margin-bottom: 9px;
+}
+
+.img_export{
+	width: 221px;
+	height: 150px;
+	float: left;
+}
+
+.green_top{
+	margin-top: -2% !important;
+}
+
+.exports{
+	margin-top: -2% !important;
+}
+
+.iframe_vanguard{
+	border: none;
+    width: 100%;
+    margin-top: -10%;
+    height: 190px;
+}
+
+.list_visas li{
+	margin-left: 25%;
+	margin-top: 3%;
+	font-family: 'Helvetica';
+}
+
+.list_auth li{
+	margin-left: 10%;
+    margin-bottom: 8%;
+}
+
+.text_content{
+	padding: 10px 0px 0px 30px;
+	font-family: 'Helvetica';
+}
+
+.green_line{
+	border-top: 2px solid #008d36 !important;
+}
+
+.margin-up{
+    margin-top: -20%;
+}
+
+.list_faq li{
+	margin-left: 7%;
+}
+
+.right{
+	float: right;
+}
+
+.list_medical{
+	margin-left: 7%;
+	margin-top: -5%;
+}
+
+.pre_footer{
+	background-color: #e2e4e6;
+	 padding: 3% 14%;
+}
+
+.footer_li{
+	list-style: none;
+}
+
+.small_h1{
+	font-size: 22px;
+}
+
+.map{
+	position: relative;
+    float: right;
+    margin-top: -10%;
+}
+
+.two_footer{
+	width: 20%;
+}
+
+.small_row{
+	height: 20px;
+}
+
+.footer{
+	background-color: #666;
+	 padding: 3vh 14vw;
+	 color:#fff;
+	 margin:0;
+	 font-family: 'Helvetica' !important;
+}
+
+
+.txtright{
+	text-align: right;
+}
+
+.txtleft{
+	text-align: left;
+	font-family: 'Helvetica' !important;
+}
+
+.nothing,.nothing:hover,.nothing span{
+	text-decoration: none;
+	color:#fff;
+    font-family: 'Helvetica' !important;
+}
+
+.pad{
+  padding-right: 15px;
+  padding-left: 15px;
+  }
