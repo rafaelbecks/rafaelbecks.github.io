@@ -1,0 +1,168 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".title_blue a").mouseover(function(){
+			element="#"+$(this).attr("ui-sref")+"_icon p";
+			$(element).addClass("blue");
+		});
+		$(".title_blue a").mouseout(function(){
+			element="#"+$(this).attr("ui-sref")+"_icon p";
+			$(element).removeClass("blue");
+		});
+	});
+</script>
+<section class="main">
+	
+	<div class="content">
+		<div class="img_text wow fadeInUp">
+
+			<h1>ESCAPA DE LA RUTINA</h1>
+			<h3 class="interlineado">Sumérgete con nosotros y</br> Vive una experiencia inolvidable</h3>
+			<h3 class="interlineado">DISCOVER SCUBA DIVING</h3>
+			<button onclick="window.location.href='http://rafaelbecks.github.io/scuba/#/eventos'" class="btn_more ligthopen" >QUIERO</br>SABER MÁS</button>
+		</div>
+		<!--div class="left">
+			<img src="img/5estrellas.png"></br>
+			<span>Centro Integral de Submarinismo</span>
+		</div-->
+	</div>
+</section>
+
+<section class="info">
+	<div class="content wow fadeIn">
+	<center>
+		<h2>¿QUÉ TIENE SCUBA DIVING PARA TI?</h2>
+
+<section class="desktop_icons hidden-xs">
+		<div class="row icons_div">
+			<article  class="col-md-3 col-sm-3 col-lg-3 article" id="staff_icon">
+				<p ui-sref="staff"class="icon-scuba-1 custom_icons"></p>
+					<h5 class="title_blue"><a ui-sref="staff">Staff de profesionales certificados PADI</a></h5>					
+			</article>
+			<article class="col-md-3 col-sm-3 col-lg-3 article" id="contacto_icon">
+				<p ui-sref="contacto" class="icon-scuba-4 custom_icons"></p>
+					<h5 class="title_blue"><a ui-sref="contacto">Operadora de Buceo y Posada</a></h5>
+			</article>
+			<article  class="col-md-3 col-sm-3 col-lg-3 article" id="actividades_icon">
+				<p ui-sref="actividades" class="icon-scuba-3 custom_icons"></p>
+					<h5 class="title_blue"><a ui-sref="actividades">Buceo recreativo y técnico</a></h5>
+			</article>
+			<article   class="col-md-3 col-sm-3 col-lg-3 article" id="tienda_icon">
+				<p ui-sref="tienda" class="icon-scuba-2 custom_icons"></p>
+					<h5 class="title_blue"><a ui-sref="tienda">Tienda</a></h5>
+			</article>
+		</div>
+			<!--TEXTOS -->
+		<div class="row">
+			<article   class="col-md-3 col-sm-3 col-lg-3 article">
+				<p class="justify">El mejor equipo de instructores y especialistas con gran experiencia avalada por más de 7000 inmersiones en conjunto.</p>
+			</article>
+
+			<article   class="col-md-3 col-sm-3 col-lg-3 article">
+				<p class="justify">Buceo de playa todas las semanas con infraestructura única en Venezuela y América Latina, ambiente familiar para el disfrute de adultos y niños.</p>
+			</article>
+
+			<article   class="col-md-3 col-sm-3 col-lg-3 article">
+				<p class="justify">Centro de instrucción consolidado en Venezuela como Instructor Development Center 5 estrellas PADI.</p>
+			</article>
+
+			<article   class="col-md-3 col-sm-3 col-lg-3 article">
+					<p class="justify">Productos de submarinismo de altísima calidad con marcas como SCUBAPRO, TUSA, WATERPROOF, DIVE RITE, SHEAR WATER, AMPHIBIUS OUTFITTERS.</p>
+			</article>
+
+		</div>	
+</section>
+
+<section class="mobile_icons hidden-md hidden-lg hidden-sm">
+	<div class="rows icons_div">
+		<article  ui-sref="staff" class="col-md-3 col-sm-3 col-lg-3 article">
+				<div class="texto">
+				<p class="icon-scuba-1 custom_icons"></p>
+					<h5><a ui-sref="staff">Staff de profesionales certificados PADI</a></h5>					
+				</div>
+					<p>El mejor equipo de instructores y especialistas con gran experiencia avalada por más de 7000 inmersiones en conjunto.</p>
+		</article>
+		<article ui-sref="contacto" class="col-md-3 col-sm-3 col-lg-3 article">
+				<p class="icon-scuba-4 custom_icons"></p>
+					<h5><a ui-sref="contacto">Operadora de Buceo y Posada</a></h5>
+					<p>Buceo de playa todas las semanas con infraestructura única en Venezuela y América Latina, ambiente familiar para el disfrute de adultos y niños.</p>
+		</article>
+		<article ui-sref="actividades" class="col-md-3 col-sm-3 col-lg-3 article">
+						<p class="icon-scuba-3 custom_icons"></p>
+							<h5><a ui-sref="actividades">Buceo recreativo y técnico</a></h5>
+							<p>Centro de instrucción consolidado en Venezuela como Instructor Development Center 5 estrellas PADI.</p>
+		</article>
+
+		<article  ui-sref="tienda" class="col-md-3 col-sm-3 col-lg-3 article">
+				<p class="icon-scuba-2 custom_icons"></p>
+					<h5><a ui-sref="tienda">Tienda</a></h5>
+					<p>Productos de submarinismo de altísima calidad con marcas como SCUBAPRO, TUSA, WATERPROOF, DIVE RITE, SHEAR WATER, AMPHIBIUS OUTFITTERS.</p>
+		</article> 
+	</div>
+</section>
+	</center>	
+	</div>
+</section>
+<section class="adventure">
+			<div class="img_text_aventura wow fadeInDown">
+			<h1>CONTINÚA </br>LA AVENTURA</h1>
+			<h3>PADI OPEN WATER DIVING</h3>
+			<button class="btn_more_dark ligthopen" ui-sref="actividades">QUIERO</br>SABER MÁS</button>
+		</div>
+</section>
+
+<section class="youtube_info">
+	<div class="content">
+	<center>
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-lg-6 wow fadeInUp"><h2 class="black info_sec h_vid">Descubre, explora,sumérgete</h2>
+<iframe class="yt" width="85%" height="300" src="https://www.youtube.com/embed/DdQ_re8WZPU" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-6 col-sm-6 col-lg-6 wow fadeInUp"><h2 class="info_sec no_top">PRÓXIMOS EVENTOS</h2>
+				<article class="row evento">
+					<div class="col-md-4 col-sm-4"><img class="thumb"src="img/thumb1.png" /></div>	
+					<div class="col-md-5 col-sm-5">
+					<center>
+						<h5 lass="titulo_evento">PADI Buceo Profundo</h5>
+						<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+					</center>
+					</div>	
+					<div class="col-md-3 inter_button">
+						<button ui-sref="eventos" class="read_more btn_anotar">ME ANOTO</button>
+					</div>					</article>
+				<article class="row evento">
+					<div class="col-md-4 col-sm-4"><img class="thumb"src="img/thumb2.png" /></div>	
+					<div class="col-md-5 col-sm-5">
+						<h5 class="titulo_evento">PADI Open Water Diver</h5>
+						<p class="desc">Caracas, C.C Macaracuay</br>29 de Abril 2015</p>
+					</div>	
+					<div class="col-md-3 inter_button">
+						<button ui-sref="eventos" class="read_more btn_anotar">ME ANOTO</button>
+					</div>					</article>
+				<article class="row evento">
+					<div class="col-md-4 col-sm-4"><img class="thumb"src="img/thumb3.png" /></div>	
+					<div class="col-md-5 col-sm-5">
+						<h5 class="titulo_evento">PADI Rescue Diver</h5>
+						<p class="desc">Caracas, C.C Macaracuay</br>21 de Mayo 2015</p>
+					</div>	
+					<div class="col-md-3 col-sm-3 inter_button">
+						<button ui-sref="eventos" class="read_more btn_anotar">ME ANOTO</button>
+					</div>	
+	
+				</article>
+				<article class="row evento_buttons">
+					<div class="col-md-12">
+						<button ui-sref="actividades" class="read_more btn_anotar left_button">EVENTOS[+]</button>
+						<button ui-sref="cursos" class="read_more btn_anotar left_button">CURSOS[+]</button>					
+					</div>
+				</article>
+
+			</div>
+
+		</div>
+	</center>
+	</div>
+
+</section>
+
+		<div class="cleaner"></div>
+		<div ng-include src="'contact_info.html'" class="partial_info"></div>

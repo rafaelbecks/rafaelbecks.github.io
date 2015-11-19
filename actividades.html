@@ -1,0 +1,167 @@
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	slider1= $('.content_cursos_pag').bxSlider({
+    mode: 'vertical',
+    minSlides: 4,
+    infiniteLoop:false,
+    slideMargin:10
+  });
+	slider2=$('.content_eventos_pag').bxSlider({
+    mode: 'vertical',
+    minSlides: 4,
+    infiniteLoop:false,
+    slideMargin:10
+  });
+
+
+	  $("#arrow_down_cursos").click(function(){
+		slider1.goToNextSlide();
+	  });
+
+	  $("#arrow_up_cursos").click(function(){
+	  	slider1.goToPrevSlide();
+	  });
+
+	  $("#arrow_down_eventos").click(function(){
+		slider2.goToNextSlide();
+	  });
+
+	  $("#arrow_up_eventos").click(function(){
+	  	slider2.goToPrevSlide();
+	  });
+
+
+});	
+</script>
+
+
+<section class="actividades view" ng-controller="cursosController">
+	<section class="content">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<center><h1 class="black wow fadeInDown">CURSOS</h1></center>
+				<div class="row_content  content_cursos_pag wow fadeIn">
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb1.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb2.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Open Water Diver</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ng-click="href_curso(1,'OPEN WATER DIVER');" class="read_more btn_anotar_2 no_float">ME ANOTO_prueba</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PRUEBA</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					</div>
+						<div class="paging">
+							<div class="arrow" id="arrow_up_cursos"><i class="ion-ios-arrow-up"></i></div>
+							<div class="arrow" id="arrow_down_cursos"><i class="ion-ios-arrow-down"></i></div>
+						</div>
+
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<center><h1 class="black wow fadeInDown">EVENTOS</h1></center>
+								<div class="row_content  content_eventos_pag wow fadeIn">
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb1.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb2.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Open Water Diver</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PADI Buceo Profundo</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					<article class="row">
+						<div class="col-md-5 col-sm-5"><img class="thumb margin_thumb"src="img/thumb3.png" /></div>	
+						<div class="col-md-7 col-sm-7">
+						<center>
+							<h5 class="black cursos_titulo">PRUEBA</h5>
+							<p class="desc">Caracas, C.C Macaracuay</br>21 de Abril 2015</p>						
+							<button ui-sref="eventos" class="read_more btn_anotar_2 no_float">ME ANOTO</button>
+						</center>
+						</div>	
+					</article>
+					</div>
+				</div>
+		<div class="paging">
+							<div class="arrow" id="arrow_up_eventos"><i class="ion-ios-arrow-up"></i></div>
+							<div class="arrow" id="arrow_down_eventos"><i class="ion-ios-arrow-down"></i></div>
+						</div>
+				</div>
+			</div>
+	</section>
+			<div class="cleaner"></div>
+		<div ng-include src="'contact_info.html'" class="partial_info"></div>
+
+</section>
